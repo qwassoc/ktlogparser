@@ -12,7 +12,7 @@
 	<h2>Requirements</h2>
 	<p>
 	  Clients need to set following settings:
-	  <pre><code>match_auto_logconsole 1
+	  <pre><code>match_auto_logconsole 2
 log_readable 1</code></pre>
 	
 	<p>
@@ -24,16 +24,16 @@ log_readable 1</code></pre>
 	require "ktlogpsr.php";
 	
 	$parser = new KTLogParser;
-	$r = $parser-&gt;+Parse("a.log");
+	$r = $parser-&gt;Parse("a.log");
 	
 	if (is_null($r)) {
-		echo "Error: ".$parser-&gt;+ErrorDesc();
+		echo "Error: ".$parser-&gt;ErrorDesc();
 	}
 	else {
-		echo "&lt;p&gt;+Success!&lt;/p&gt;+";
-		echo "&lt;pre&gt;+&lt;code&gt;+";
+		echo "&lt;p&gt;Success!&lt;/p&gt;";
+		echo "&lt;pre&gt;&lt;code&gt;";
 		print_r($r);
-		echo "&lt;/code&gt;+&lt;/pre&gt;+\n";
+		echo "&lt;/code&gt;&lt;/pre&gt;\n";
 	}
 	?&gt;
 	</pre></code>
