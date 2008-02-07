@@ -22,11 +22,17 @@ define (KTLP_ST_GAME, 1);
 define (KTLP_ST_PLAYERS, 2);
 define (KTLP_ST_MATCH, 3);
 define (KTLP_ST_TEAMS, 4);
+define (KTLP_ST_AFTERGAME, 5);
 
 define (KTLP_LOGTYPE_UNKNOWN, 0);
 define (KTLP_LOGTYPE_KTX, 1);
 
 // $KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
+
+function KTLP_ChatLine($line) 
+{
+	return preg_match("/^\S+:/",trim($line));
+}
 
 function KTLP_ParseMultipleLine($line, $pattern)
 {
@@ -40,9 +46,7 @@ function KTLP_ParseMultipleLine($line, $pattern)
 		return $val;
 	}
 	else return NULL;
-
 }
-
 
 // parses line with format like this:
 // rl62.3% sg35.6% ssg35.7%
@@ -97,16 +101,18 @@ class KTLP_TeamScoresParser extends KTLP_BasePartParser
 	
 	function EatLine($line)
 	{
-		if ($this->over) return;
+		if ($this->over) return false;
 		$this->lines++;
 		$this->DPrint(1,"teamscores eating line {$this->lines}");
 		
 		$matches = array();
 		
 		if (preg_match("/^_+$/", $line)) {
-			if ($this->lines != 1) $this->over = true;
-			
-			return;
+			if ($this->lines != 1) {
+				$this->over = true;
+				return false;
+			}
+			else return true;
 		}
 		else if (preg_match("/^\[(.*)\]: (\S+) . (\S+)$/",$line,$matches)) {
 			$team = $matches[1];
@@ -114,6 +120,8 @@ class KTLP_TeamScoresParser extends KTLP_BasePartParser
 			$percentage = $matches[3];
 			$this->result[$team] = array ( "frags" => $frags, "percentage" => $percentage );
 		}
+		
+		return true;
 	}
 }
 
@@ -142,6 +150,7 @@ class KTLP_MatchStatsParser extends KTLP_BasePartParser
 			}
 			else if ($this->section == 2) {
 				$this->section = 0;	// end of detailed match statistics reached
+				return false;
 			}
 		}
 		else if (preg_match("/^$/", $line)) {
@@ -162,6 +171,7 @@ class KTLP_MatchStatsParser extends KTLP_BasePartParser
 			}
 		}
 		$this->DPrint(1,"Eating line done, section is {$this->section}");
+		return true;
 	}
 }
 
@@ -261,6 +271,7 @@ class KTLP_Parser
 		$this->err = KTLP_ERR_OK;
 		$this->output = array();
 		$this->output["general"] = array();
+		$this->output["chat"] = array( "pre-game" => "", "after-game" => "" );
 		$this->debug = $dbg;
 		$this->PlayerStatsParser = new KTLP_PlayerStatsParser($dbg);
 		$this->TeamScoresParser = new KTLP_TeamScoresParser($dbg);
@@ -273,9 +284,17 @@ class KTLP_Parser
 		}
 	}
 	
-	// not implemented,
-	// maybe just save the chat
-	function EatLinePreGame($line) {} 
+	function EatLinePreGame($line) {
+		if (KTLP_ChatLine($line)) {
+			$this->output["chat"]["pre-game"] .= $line . "\n";
+		}
+	} 
+	
+	function EatLineAfterGame($line) {
+		if (KTLP_ChatLine($line)) {
+			$this->output["chat"]["after-game"] .= $line ."\n";
+		}
+	}
 	
 	// not implemented,
 	// add parsing of frag messages, counting of mm2 messages, ... what else?
@@ -328,7 +347,14 @@ class KTLP_Parser
 			case KTLP_ST_GAME: $this->EatLineGame($line); break;
 			case KTLP_ST_PLAYERS: $this->PlayerStatsParser->EatLine($line); break;
 			case KTLP_ST_MATCH: $this->MatchStatsParser->EatLine($line); break;
-			case KTLP_ST_TEAMS: $this->TeamScoresParser->EatLine($line); break;
+			case KTLP_ST_TEAMS: 
+				$r = $this->TeamScoresParser->EatLine($line);
+				if (!$r) {
+					$this->parsestate = KTLP_ST_AFTERGAME;
+				}
+				break;
+				
+			case KTLP_ST_AFTERGAME: $this->EatLineAfterGame($line); break;
 			default:
 			DPrint(1,"Unknown state cannot be handled!");
 			}
@@ -343,8 +369,6 @@ class KTLP_Parser
 			$t_scores,
 			$t_stats
 		);
-		// $this->output["teamscores"] = $t_scores;
-		// $this->output["teamstats"] = $t_stats;
 		$this->output["players"] = $this->PlayerStatsParser->GetResult();
 		return $this->output;
 	}
