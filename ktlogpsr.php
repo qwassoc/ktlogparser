@@ -27,7 +27,7 @@ define (KTLP_ST_AFTERGAME, 5);
 define (KTLP_LOGTYPE_UNKNOWN, 0);
 define (KTLP_LOGTYPE_KTX, 1);
 
-// $KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
+$KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
 
 function KTLP_ChatLine($line) 
 {
@@ -52,7 +52,7 @@ function KTLP_ParseMultipleLine($line, $pattern)
 // rl62.3% sg35.6% ssg35.7%
 function KTLP_ParseWpLine($line)
 {
-	$pattern = "/\s*(\D+)(\S+)\s*/";
+	$pattern = "/\s*(\D+)([0-9\.\%]+)\s*/";
 	return KTLP_ParseMultipleLine($line, $pattern);
 }
 
@@ -312,7 +312,7 @@ class KTLP_Parser
 	{
 		$matches = array();
 		
-		$this->DPrint(2,"Eating line ".$line);
+		$this->DPrint(1,"Eating line ".$line);
 		if (preg_match("/^The match has begun!$/",$line)) {
 			$this->parsestate = KTLP_ST_GAME;
 			$this->DPrint(1,"Match begin matched");
@@ -333,11 +333,12 @@ class KTLP_Parser
 			$this->parsestate = KTLP_ST_PREGAME;
 			$this->DPrint(1,"Match end matched");		
 		}
-		else if (preg_match("/^matchdate: (.*)$/", $line, $matches)) {
+		else if (preg_match("/^matchdate: (.*)$/", $line, $matches)
+				|| preg_match("/^matchkey: (.*)$/", $line, $matches)) {
 			$this->output["general"]["date"] = $matches[1];
 			$this->DPrint(1,"Matchdate matched");
 		}
-		else if (preg_match("/^\[(.*)\] top scorers:$/",$line, $matches)) {
+		else if (preg_match("/^\[(.*)\] top scorer?s:$/",$line, $matches)) {
 			$this->output["general"]["map"] = $matches[1];
 			$this->DPrint(1,"Map matched");
 		}
@@ -375,20 +376,67 @@ class KTLP_Parser
 	function Error() { return $this->err; }
 }
 
+class KTLP_ReadableConverter
+{
+	var $readable;
+	var $orig;
+	
+	// used ezQuake 1.9 implementation of Con_CreateReadableChars
+	function KTLP_ReadableConverter()
+	{
+		$this->readable = array(
+			'.', '_' , '_' , '_' , '_' , '.' , '_' , '_' , '_' , '_' , "\n" ,
+			'_' , "\n" , "\t" , '.' , '.', '[', ']',
+			'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+			'.', '_', '_', '_');
+			
+		$this->orig = array();
+		
+		 
+		for ($i = 32; $i < 127; $i++) {
+			$this->readable[$i] = $this->readable[128 + $i] = chr($i);
+		}
+		
+		$this->readable[127] = $this->readable[128 + 127] = '_';
+	
+		for ($i = 0; $i < 32; $i++) {
+			$this->readable[128 + $i] = $this->readable[$i];
+		}
+		
+		$this->readable[128] = '_';
+		$this->readable[10 + 128] = '_';
+		$this->readable[12 + 128] = '_';
+		
+		for ($i = 0; $i < 256; $i++) {
+			$this->orig[$i] = chr($i);
+		}
+
+		ksort($this->readable);
+		ksort($this->orig);
+	}
+
+	function Convert($str)
+	{
+		return str_replace($this->orig, $this->readable, $str);
+	}
+}
+
 class KTLogParser
 {
 	var $err;
+	var $readableConverter;
 	
 	function KTLogParser()
 	{
 		$this->err = KTLP_ERR_OK;
+		$this->readableConverter = new KTLP_ReadableConverter();
 	}
 	
 	// returns NULL on error
 	function Parse($file)
 	{
 		$this->err = KTLP_ERR_OK;
-		$f = fopen($file,"r");
+		$f = fopen($file,"rb");
 		if (!$f) {
 			$this->err = KTLP_ERR_FILEOPEN; 
 			return NULL;
@@ -398,6 +446,7 @@ class KTLogParser
 		
 		while (!feof($f)) {
 			$l = fgets($f);	// reads one line
+			$l = $this->readableConverter->Convert($l);
 			$l = trim($l);
 			if (!$parser->EatLine($l)) {
 				$this->err = $parser->Error();

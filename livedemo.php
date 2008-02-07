@@ -1,8 +1,13 @@
 <?php
 	require "ktlogpsr.php";
 	
+	if (!$_FILES["testfile"]["size"]) {
+		echo "File upload failed";
+		die;
+	}
+	
 	$parser = new KTLogParser;
-	$r = $parser->Parse("a.log");
+	$r = $parser->Parse($_FILES["testfile"]["tmp_name"]);
 	
 	if (is_null($r)) {
 		echo "Error: ".$parser->ErrorDesc();

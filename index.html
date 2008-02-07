@@ -20,16 +20,19 @@
 	  <li>Easy to use on your league site
 	  <li>It's free and open source
 	  </ul>
-	  
-	<p>
-	  Already partially supports KTPro logs too (which have a bit different format), full support coming with the next update hopefully.
+	  	  
+  	<h2>Live demo</h2>
+	<p>Upload your console log here and the script will dump the content of the PHP structure it creates.</p>
+	<form action="livedemo.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="testfile">
+	<input type="submit" value="submit">
+	</form>
 	  
 	<h2>Requirements</h2>
 	<p>
 	  Clients need to set following settings:
 	<pre><code>
     match_auto_logconsole 2
-    log_readable 1
 	</code></pre>
 	
 	<p>
@@ -40,7 +43,8 @@
     </pre></code>
 	
 	<p>
-	  A .log file like <a href="a.log">this</a> or <a href="b.log">this</a> will get saved in users quake/log dir, from where it can be uploaded to the website.
+	  A .log file like <a href="a.log">this</a> or <a href="b.log">this</a> will get saved in users quake/log dir, from where it can be uploaded to <strong>your website</strong>.
+	  Then is the time for this script to take some action - you use it to read the contents of the log. It's up to you which stats you'll print in what form, this script just gives you the raw data. 
 	  
 	<h2>Usage</h2>
 	<pre><code>
@@ -66,7 +70,7 @@
 	<p>Will produce <a href="output.html">following output</a></p>
 	
 	<h2>Download</h2>
-	<p>Grab <a href="ktlogpsr.php">ktlogpsr.php</a> from the project SVN</p>
-
+	<p>Grab <a href="http://www.qw-dev.net/repositories/changes/ktxstats/ktlogpsr/ktlogpsr.php">ktlogpsr.php</a> from the project SVN</p>
+	
   </body>
 </html>
