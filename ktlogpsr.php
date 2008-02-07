@@ -24,9 +24,6 @@ define (KTLP_ST_MATCH, 3);
 define (KTLP_ST_TEAMS, 4);
 define (KTLP_ST_AFTERGAME, 5);
 
-define (KTLP_LOGTYPE_UNKNOWN, 0);
-define (KTLP_LOGTYPE_KTX, 1);
-
 $KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
 
 function KTLP_ChatLine($line) 
@@ -179,14 +176,12 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 {
 	var $curplayer;
 	var $curteam;
-	var $logtype;
 
 	function KTLP_PlayerStatsParser($dbg)
 	{
 		$this->KTLP_BasePartParser($dbg);
 		$this->curplayer = "";
 		$this->curteam = "";
-		$this->logtype = KTLP_LOGTYPE_UNKNOWN;
 	}
 	
 	// Player stats
@@ -194,60 +189,57 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 	{
 		$this->lines++;
 		$this->DPrint(1,"Player stats line: $line");
-		if (preg_match("/^Frags \(rank\) friendkills \. efficiency$/",$line)) {
-			$this->logtype = KTLP_LOGTYPE_KTX;
-			$this->DPrint(1,"KTX logtype recognized");
+		if (preg_match("/^Frags \(rank\) (\S*) ?\. efficiency$/",$line)) { // the 3rd word here in teamplay matches is friendkills
+			$this->DPrint(1,"Player stats intro line matched");
 		}
 		else {
-			if ($this->logtype == KTLP_LOGTYPE_KTX) {
-				$matches = array();
-				if (preg_match("/^Team \[(.*)\]:$/",$line,$matches)) {
-					$this->DPrint(1,"Team $matches[1] matched");
-					$this->curteam = $matches[1];
-				}
-				else if (preg_match("/^_+$/",$line)) {
-					$this->curplayer = "";
-				}
-				else if (preg_match("/^_ (.*):$/",$line,$matches)) {
-					$this->DPrint(1,"Player $matches[1] matched");
-					$this->curplayer = $matches[1];
-					$this->result[$this->curplayer] = array();
-					$this->result[$this->curplayer]["team"] = $this->curteam;
-				}
-				else if (preg_match("/^$/",$line)) {
-					// skip blank line
-				}
-				else if ($this->curplayer) {
-					if (preg_match("/^(.*): (.*)$/",$line,$matches)) {
-						$key = strtolower(trim($matches[1]));
-						$val = trim($matches[2]);
-						if ($key == "wp") {
-							if ($t = KTLP_ParseWpLine($val)) {
-								$val = $t;
-							}
+			$matches = array();
+			if (preg_match("/^Team \[(.*)\]:$/",$line,$matches)) {
+				$this->DPrint(1,"Team $matches[1] matched");
+				$this->curteam = $matches[1];
+			}
+			else if (preg_match("/^_+$/",$line)) {
+				$this->curplayer = "";
+			}
+			else if (preg_match("/^_ (.*):$/",$line,$matches)) {
+				$this->DPrint(1,"Player $matches[1] matched");
+				$this->curplayer = $matches[1];
+				$this->result[$this->curplayer] = array();
+				$this->result[$this->curplayer]["team"] = $this->curteam;
+			}
+			else if (preg_match("/^$/",$line)) {
+				// skip blank line
+			}
+			else if ($this->curplayer) {
+				if (preg_match("/^(.*): (.*)$/",$line,$matches)) {
+					$key = strtolower(trim($matches[1]));
+					$val = trim($matches[2]);
+					if ($key == "wp") {
+						if ($t = KTLP_ParseWpLine($val)) {
+							$val = $t;
 						}
-						else if ($key == "spawnfrags") {
-							if (preg_match("/(\d+)/",$line,$matches)) {
-								$val = $matches[1];
-							}
-						}
-						else {
-							if ($t = KTLP_ParseGeneralStatsLine($val)) {
-								$val = $t;
-							}
-						}
-						$this->result[$this->curplayer][$key] = $val;
 					}
-					// 51 (5) 2 52.6%
-					else if (preg_match("/^(\d+) \((\S+)\) (\d+) (.*)%$/",$line,$matches)) {
-						$this->result[$this->curplayer]["frags"] = $matches[1];
-						$this->result[$this->curplayer]["rank"] = $matches[2];
-						$this->result[$this->curplayer]["friendkills"] = $matches[3];
-						$this->result[$this->curplayer]["efficiency"] = $matches[4];
+					else if ($key == "spawnfrags") {
+						if (preg_match("/(\d+)/",$line,$matches)) {
+							$val = $matches[1];
+						}
 					}
 					else {
-						$this->result[$this->curplayer][] = $line;
+						if ($t = KTLP_ParseGeneralStatsLine($val)) {
+							$val = $t;
+						}
 					}
+					$this->result[$this->curplayer][$key] = $val;
+				}
+				// 51 (5) 2 52.6%
+				else if (preg_match("/^(\d+) \((\S+)\) (\S+) (.*)%$/",$line,$matches)) {
+					$this->result[$this->curplayer]["frags"] = $matches[1];
+					$this->result[$this->curplayer]["rank"] = $matches[2];
+					$this->result[$this->curplayer]["friendkills"] = $matches[3];
+					$this->result[$this->curplayer]["efficiency"] = $matches[4];
+				}
+				else {
+					$this->result[$this->curplayer][] = $line;
 				}
 			}
 		}
@@ -313,7 +305,7 @@ class KTLP_Parser
 		$matches = array();
 		
 		$this->DPrint(1,"Eating line ".$line);
-		if (preg_match("/^The match has begun!$/",$line)) {
+		if (preg_match("/^The (\S+) has begun!$/",$line)) {
 			$this->parsestate = KTLP_ST_GAME;
 			$this->DPrint(1,"Match begin matched");
 		}
@@ -329,7 +321,7 @@ class KTLP_Parser
 			$this->parsestate = KTLP_ST_TEAMS;
 			$this->DPrint(1,"Team scores matched");
 		}
-		else if (preg_match("/^The match is over$/",$line)) {
+		else if (preg_match("/^The match is over/",$line)) {
 			$this->parsestate = KTLP_ST_PREGAME;
 			$this->DPrint(1,"Match end matched");		
 		}
