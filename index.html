@@ -3,227 +3,70 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=windows-1250">
   <title>KT Log Parser</title>
+  <style type="text/css">
+  pre { background-color: #eee; border: 1px solid black; }
+  </style>
   </head>
   <body>
 	<h1>KT Log Parser</h1>
 	<p>
-	  A PHP script that parses console logs from matches in KTX mods and extracts player stats from them into PHP array structures. It's suitable for leagues to offer more match statistics than just frags on their webpages.
+	  A PHP script that parses <strong>client's console logs</strong> from matches in KTX mods and extracts player stats from them into PHP array structures. It's suitable for leagues to offer rich detailed match statistics on their webpages, much more than just frag amounts.
+	<p>
+	  Benefits:
+	  <ul>
+	  <li>Works with all current versions of existing clients (ezQuake, FuhQuake)
+	  <li>Works with all current versions of server mods (KTPro or KTX)
+	  <li>Doesn't need users to download and upload huge demos to get stats
+	  <li>Easy to use on your league site
+	  <li>It's free and open source
+	  </ul>
+	  
+	<p>
+	  Already partially supports KTPro logs too (which have a bit different format), full support coming with the next update hopefully.
 	  
 	<h2>Requirements</h2>
 	<p>
 	  Clients need to set following settings:
-	  <pre><code>match_auto_logconsole 2
-log_readable 1</code></pre>
+	<pre><code>
+    match_auto_logconsole 2
+    log_readable 1
+	</code></pre>
+	
+	<p>
+	  That will make client automatically log console text during the match, which is exactly what this script parses.
+	  If user forgot to enable console logging, he can create the log later from the demo, like this:
+	  <pre><code>
+    playdemo my4on4match.mvd; log mylog; demo_jump 30:00; log stop
+    </pre></code>
 	
 	<p>
 	  A .log file like <a href="a.log">this</a> or <a href="b.log">this</a> will get saved in users quake/log dir, from where it can be uploaded to the website.
 	  
 	<h2>Usage</h2>
 	<pre><code>
-	&lt;?php
-	require "ktlogpsr.php";
+    &lt;?php
+    include "ktlogpsr.php";
+    
+    $parser = new KTLogParser;
+    $r = $parser-&gt;Parse("a.log");
+    
+    if (is_null($r)) {
+        echo "Error: ".$parser-&gt;ErrorDesc();
+    }
+    else {
+        echo "&lt;pre&gt;&lt;code&gt;";
+        print_r($r);    // print_r is in-built PHP function that performs
+                        // formatted print of the contents of the argument
+                        // so it's here only for demonstrational purposes :-)
+        echo "&lt;/code&gt;&lt;/pre&gt;";
+    }
+    ?&gt;
+    </pre></code>
 	
-	$parser = new KTLogParser;
-	$r = $parser-&gt;Parse("a.log");
-	
-	if (is_null($r)) {
-		echo "Error: ".$parser-&gt;ErrorDesc();
-	}
-	else {
-		echo "&lt;p&gt;Success!&lt;/p&gt;";
-		echo "&lt;pre&gt;&lt;code&gt;";
-		print_r($r);
-		echo "&lt;/code&gt;&lt;/pre&gt;\n";
-	}
-	?&gt;
-	</pre></code>
-	
-	<p>Will produce following output:</p>
-	
-	<pre><code>
-    Array
-    (
-    [players] =&gt; Array
-        (
-            [jebak] =&gt; Array
-                (
-                    [frags] =&gt; 45
-                    [rank] =&gt; -11
-                    [friendkills] =&gt; 2
-                    [efficiency] =&gt; 44.6
-                    [wp] =&gt; Array
-                        (
-                            [rl] =&gt; 69.1%
-                            [gl] =&gt; 34.8%
-                            [sg] =&gt; 32.5%
-                            [ssg] =&gt; 36.4%
-                        )
-
-                    [rl skill] =&gt; Array
-                        (
-                            [ad] =&gt; 56.4
-                            [dh] =&gt; 9
-                        )
-
-                    [armr&mhs] =&gt; Array
-                        (
-                            [ga] =&gt; 5
-                            [ya] =&gt; 14
-                            [ra] =&gt; 0
-                            [mh] =&gt; 2
-                        )
-
-                    [powerups] =&gt; Array
-                        (
-                            [Q] =&gt; 1
-                            [P] =&gt; 0
-                            [R] =&gt; 0
-                        )
-
-                    [rl] =&gt; Array
-                        (
-                            [Took] =&gt; 7
-                            [Killed] =&gt; 4
-                            [Dropped] =&gt; 5
-                        )
-
-                    [damage] =&gt; Array
-                        (
-                            [Tkn] =&gt; 7619
-                            [Gvn] =&gt; 7199
-                            [Tm] =&gt; 437
-                        )
-
-                    [streaks] =&gt; Array
-                        (
-                            [Frags] =&gt; 20
-                            [QuadRun] =&gt; 0
-                        )
-
-                    [spawnfrags] =&gt; 5
-                )
-
-            [fl4m3r] =&gt; Array
-                (
-                    [frags] =&gt; 66
-                    [rank] =&gt; 21
-                    [friendkills] =&gt; 2
-                    [efficiency] =&gt; 59.5
-                    [wp] =&gt; Array
-                        (
-                            [rl] =&gt; 67.1%
-                            [gl] =&gt; 26.7%
-                            [sg] =&gt; 43.6%
-                            [ssg] =&gt; 38.0%
-                        )
-
-                    [rl skill] =&gt; Array
-                        (
-                            [ad] =&gt; 55.5
-                            [dh] =&gt; 8
-                        )
-
-                    [armr&mhs] =&gt; Array
-                        (
-                            [ga] =&gt; 3
-                            [ya] =&gt; 11
-                            [ra] =&gt; 0
-                            [mh] =&gt; 6
-                        )
-
-                    [powerups] =&gt; Array
-                        (
-                            [Q] =&gt; 4
-                            [P] =&gt; 0
-                            [R] =&gt; 0
-                        )
-
-                    [rl] =&gt; Array
-                        (
-                            [Took] =&gt; 7
-                            [Killed] =&gt; 11
-                            [Dropped] =&gt; 5
-                        )
-
-                    [damage] =&gt; Array
-                        (
-                            [Tkn] =&gt; 7584
-                            [Gvn] =&gt; 8656
-                            [Tm] =&gt; 330
-                        )
-
-                    [streaks] =&gt; Array
-                        (
-                            [Frags] =&gt; 14
-                            [QuadRun] =&gt; 4
-                        )
-
-                    [spawnfrags] =&gt; 1
-                )
-
-            [JohnNy_cz] =&gt; Array
-                (
-                    [frags] =&gt; 51
-                    [rank] =&gt; 5
-                    [friendkills] =&gt; 2
-                    [efficiency] =&gt; 52.6
-                    [wp] =&gt; Array
-                        (
-                            [rl] =&gt; 76.3%
-                            [gl] =&gt; 42.9%
-                            [sg] =&gt; 36.7%
-                            [ssg] =&gt; 73.8%
-                        )
-
-                    [rl skill] =&gt; Array
-                        (
-                            [ad] =&gt; 57.7
-                            [dh] =&gt; 15
-                        )
-
-                    [armr&mhs] =&gt; Array
-                        (
-                            [ga] =&gt; 4
-                            [ya] =&gt; 6
-                            [ra] =&gt; 0
-                            [mh] =&gt; 3
-                        )
-
-                    [powerups] =&gt; Array
-                        (
-                            [Q] =&gt; 2
-                            [P] =&gt; 0
-                            [R] =&gt; 0
-                        )
-
-                    [rl] =&gt; Array
-                        (
-                            [Took] =&gt; 8
-                            [Killed] =&gt; 9
-                            [Dropped] =&gt; 3
-                        )
-
-                    [damage] =&gt; Array
-                        (
-                            [Tkn] =&gt; 6525
-                            [Gvn] =&gt; 7355
-                            [Tm] =&gt; 241
-                        )
-
-                    [streaks] =&gt; Array
-                        (
-                            [Frags] =&gt; 9
-                            [QuadRun] =&gt; 6
-                        )
-
-                    [spawnfrags] =&gt; 6
-                )
-	</code></pre>
-	
-	<p>And so on...
+	<p>Will produce <a href="output.html">following output</a></p>
 	
 	<h2>Download</h2>
-	<p>Grab ktlogpsr.php from the project SVN</p>
+	<p>Grab <a href="ktlogpsr.php">ktlogpsr.php</a> from the project SVN</p>
 
   </body>
 </html>

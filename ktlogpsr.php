@@ -1,6 +1,7 @@
 <?php
 
 /// \file
+///
 /// \brief
 /// KT* Log Parser
 ///
@@ -25,25 +26,154 @@ define (KTLP_ST_TEAMS, 4);
 define (KTLP_LOGTYPE_UNKNOWN, 0);
 define (KTLP_LOGTYPE_KTX, 1);
 
-error_reporting(E_ALL+E_STRICT);
+// $KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
 
-class KTLP_PlayerStatsParser
+function KTLP_ParseMultipleLine($line, $pattern)
 {
-	var $result;
+	$matches = array();
+	$val = array();
+	
+	if (preg_match_all($pattern,$line,$matches)) {
+		for ($i=0; $i < count($matches[0]); $i++) {
+			$val[$matches[1][$i]] = $matches[2][$i];
+		}
+		return $val;
+	}
+	else return NULL;
+
+}
+
+
+// parses line with format like this:
+// rl62.3% sg35.6% ssg35.7%
+function KTLP_ParseWpLine($line)
+{
+	$pattern = "/\s*(\D+)(\S+)\s*/";
+	return KTLP_ParseMultipleLine($line, $pattern);
+}
+
+// parses line with format like this:
+// ad:61.5 dh:15
+function KTLP_ParseGeneralStatsLine($line)
+{
+	$pattern = "/\s*(\D+):(\S+)\s*/";
+	return KTLP_ParseMultipleLine($line, $pattern);
+}
+
+// base implementation of debugging, output buffer, lines count storage 
+class KTLP_BasePartParser
+{
 	var $debug;
-	var $curplayer;
-	var $curteam;
-	var $logtype;
+	var $result;
+	var $lines;
 
 	function DPrint($lev,$str) {
 		if ($this->debug >= $lev) {
 			echo "<p><code>".htmlspecialchars($str)."</code></p>";
 		}
 	}
-
-	function KTLP_PlayerStatsParser($dbg) {
+	
+	function KTLP_BasePartParser($dbg) {
 		$this->result = array();
 		$this->debug = $dbg;
+		$this->lines = 0;
+	}
+
+	function GetResult()
+	{
+		return $this->result;
+	}
+}
+
+class KTLP_TeamScoresParser extends KTLP_BasePartParser
+{
+	var $over;
+	
+	function KTLP_TeamScoresParser($dbg)
+	{
+		$this->KTLP_BasePartParser($dbg);
+		$this->over = false;
+	}
+	
+	function EatLine($line)
+	{
+		if ($this->over) return;
+		$this->lines++;
+		$this->DPrint(1,"teamscores eating line {$this->lines}");
+		
+		$matches = array();
+		
+		if (preg_match("/^_+$/", $line)) {
+			if ($this->lines != 1) $this->over = true;
+			
+			return;
+		}
+		else if (preg_match("/^\[(.*)\]: (\S+) . (\S+)$/",$line,$matches)) {
+			$team = $matches[1];
+			$frags = $matches[2];
+			$percentage = $matches[3];
+			$this->result[$team] = array ( "frags" => $frags, "percentage" => $percentage );
+		}
+	}
+}
+
+class KTLP_MatchStatsParser extends KTLP_BasePartParser
+{
+	var $section;
+	var $curteam;
+	
+	function KTLP_MatchStatsParser($dbg)
+	{
+		$this->KTLP_BasePartParser($dbg);
+		$this->section = 0;
+		$this->curteam = "";
+	}
+	
+	function EatLine($line)
+	{
+		$this->lines++;
+		$this->DPrint(1,"Match stats eating line {$this->lines}, section is {$this->section}");
+		if (preg_match("/^_+$/",$line)) {
+			$this->DPrint(1,"Matched separator");
+			if ($this->section == 1) {
+				$this->section = 2;
+			}
+			else if ($this->section == 0) {
+			}
+			else if ($this->section == 2) {
+				$this->section = 0;	// end of detailed match statistics reached
+			}
+		}
+		else if (preg_match("/^$/", $line)) {
+			$this->DPrint(1,"Matched blank line");
+		}
+		else if (preg_match("/^.*weapons.*powerups.*armors.*damage.*$/",$line)) {
+			$this->section = 1;
+			$this->DPrint(1,"Matched WPAD");
+		}
+		else if ($this->section == 2) {	// main content of match stats is in this section
+			if (preg_match("/^\[(.*)\]: Wp:(.*)$/", $line, $matches)) {
+				$this->curteam = $matches[1];
+				$this->result[$this->curteam] = array();
+				$this->result[$this->curteam]["wp"] = KTLP_ParseWpLine($matches[2]);
+			}
+			else if (preg_match("/^\s*(\S+):(.*)$/",$line,$matches)) {
+				$this->result[$this->curteam][strtolower($matches[1])] = KTLP_ParseGeneralStatsLine($matches[2]);
+			}
+		}
+		$this->DPrint(1,"Eating line done, section is {$this->section}");
+	}
+}
+
+class KTLP_PlayerStatsParser extends KTLP_BasePartParser
+{
+	var $curplayer;
+	var $curteam;
+	var $logtype;
+
+	function KTLP_PlayerStatsParser($dbg)
+	{
+		$this->KTLP_BasePartParser($dbg);
 		$this->curplayer = "";
 		$this->curteam = "";
 		$this->logtype = KTLP_LOGTYPE_UNKNOWN;
@@ -52,6 +182,7 @@ class KTLP_PlayerStatsParser
 	// Player stats
 	function EatLine($line)
 	{
+		$this->lines++;
 		$this->DPrint(1,"Player stats line: $line");
 		if (preg_match("/^Frags \(rank\) friendkills \. efficiency$/",$line)) {
 			$this->logtype = KTLP_LOGTYPE_KTX;
@@ -71,6 +202,7 @@ class KTLP_PlayerStatsParser
 					$this->DPrint(1,"Player $matches[1] matched");
 					$this->curplayer = $matches[1];
 					$this->result[$this->curplayer] = array();
+					$this->result[$this->curplayer]["team"] = $this->curteam;
 				}
 				else if (preg_match("/^$/",$line)) {
 					// skip blank line
@@ -80,11 +212,8 @@ class KTLP_PlayerStatsParser
 						$key = strtolower(trim($matches[1]));
 						$val = trim($matches[2]);
 						if ($key == "wp") {
-							if (preg_match_all("/\s*(\D+)(\S+)\s*/",$val,$matches)) {
-								$val = array();
-								for ($i=0; $i < count($matches[0]); $i++) {
-									$val[$matches[1][$i]] = $matches[2][$i];
-								}
+							if ($t = KTLP_ParseWpLine($val)) {
+								$val = $t;
 							}
 						}
 						else if ($key == "spawnfrags") {
@@ -93,11 +222,8 @@ class KTLP_PlayerStatsParser
 							}
 						}
 						else {
-							if (preg_match_all("/\s*(\D+):(\S+)\s*/",$val,$matches)) {
-								$val = array();
-								for ($i=0; $i < count($matches[0]); $i++) {
-									$val[$matches[1][$i]] = $matches[2][$i];
-								}
+							if ($t = KTLP_ParseGeneralStatsLine($val)) {
+								$val = $t;
 							}
 						}
 						$this->result[$this->curplayer][$key] = $val;
@@ -116,11 +242,7 @@ class KTLP_PlayerStatsParser
 			}
 		}
 	}
-	
-	function GetResult()
-	{
-		return $this->result;
-	}
+
 }
 
 class KTLP_Parser
@@ -130,14 +252,19 @@ class KTLP_Parser
 	var $err;
 	var $debug;
 	var $PlayerStatsParser;
+	var $TeamScoresParser;
+	var $MatchStatsParser;
 	
 	function KTLP_Parser($dbg)
 	{
 		$this->parsestate = KTLP_ST_PREGAME;
 		$this->err = KTLP_ERR_OK;
 		$this->output = array();
+		$this->output["general"] = array();
 		$this->debug = $dbg;
 		$this->PlayerStatsParser = new KTLP_PlayerStatsParser($dbg);
+		$this->TeamScoresParser = new KTLP_TeamScoresParser($dbg);
+		$this->MatchStatsParser = new KTLP_MatchStatsParser($dbg);
 	}
 	
 	function DPrint($lev,$str) {
@@ -158,10 +285,14 @@ class KTLP_Parser
 	function EatLineMatch($line) {}
 	
 	// not implemented
-	function EatLineTeams($line) {}
+	function EatLineTeams($line) {
+	
+	}
 	
 	function EatLine($line)
 	{
+		$matches = array();
+		
 		$this->DPrint(2,"Eating line ".$line);
 		if (preg_match("/^The match has begun!$/",$line)) {
 			$this->parsestate = KTLP_ST_GAME;
@@ -183,13 +314,21 @@ class KTLP_Parser
 			$this->parsestate = KTLP_ST_PREGAME;
 			$this->DPrint(1,"Match end matched");		
 		}
+		else if (preg_match("/^matchdate: (.*)$/", $line, $matches)) {
+			$this->output["general"]["date"] = $matches[1];
+			$this->DPrint(1,"Matchdate matched");
+		}
+		else if (preg_match("/^\[(.*)\] top scorers:$/",$line, $matches)) {
+			$this->output["general"]["map"] = $matches[1];
+			$this->DPrint(1,"Map matched");
+		}
 		else {
 			switch ($this->parsestate) {
 			case KTLP_ST_PREGAME: $this->EatLinePreGame($line); break;
 			case KTLP_ST_GAME: $this->EatLineGame($line); break;
 			case KTLP_ST_PLAYERS: $this->PlayerStatsParser->EatLine($line); break;
-			case KTLP_ST_MATCH: $this->EatLineMatch($line); break;
-			case KTLP_ST_TEAMS: $this->EatLineTeams($line); break;
+			case KTLP_ST_MATCH: $this->MatchStatsParser->EatLine($line); break;
+			case KTLP_ST_TEAMS: $this->TeamScoresParser->EatLine($line); break;
 			default:
 			DPrint(1,"Unknown state cannot be handled!");
 			}
@@ -198,7 +337,15 @@ class KTLP_Parser
 	}
 	
 	function Result() {
-		$this->output["players"] = $this->PlayerStatsParser->GetResult(); 
+		$t_scores = $this->TeamScoresParser->GetResult();
+		$t_stats = $this->MatchStatsParser->GetResult();
+		$this->output["teams"] = array_merge_recursive(
+			$t_scores,
+			$t_stats
+		);
+		// $this->output["teamscores"] = $t_scores;
+		// $this->output["teamstats"] = $t_stats;
+		$this->output["players"] = $this->PlayerStatsParser->GetResult();
 		return $this->output;
 	}
 	function Error() { return $this->err; }
@@ -247,6 +394,5 @@ class KTLogParser
 		}
 	}
 }
-
 
 ?>
