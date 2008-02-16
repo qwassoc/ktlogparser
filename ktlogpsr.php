@@ -61,6 +61,48 @@ function KTLP_ParseGeneralStatsLine($line)
 	return KTLP_ParseMultipleLine($line, $pattern);
 }
 
+function KTLP_SafeElementName($name)
+{
+	return strtr($name,"& !","-__");
+}
+
+// oonverts PHP array structure into JSON format
+function PHPArrayToJSON($array)
+{
+	$out = "";
+	if (is_array($array)) {
+		$out .= "{";
+		foreach ($array as $k => $v) {
+			$out .= '"'.$k.'":';
+			$out .= PHPArrayToJSON($v);
+			$out .= ", ";
+		}	
+		$out .= "}";
+	}
+	else {
+		$out = '"'.$array.'"';
+	}
+	
+	return $out;
+}
+
+// converts PHP array structure into XML format
+function PHPArrayToXML($array)
+{
+	$out = "";
+	if (is_array($array)) {
+		foreach ($array as $k => $v) {
+			$eln = KTLP_SafeElementName($k);
+			$out .= "<$eln>".PHPArrayToXML($v)."\n</$eln>\n";
+		}
+	}
+	else {
+		$out = $array;
+	}
+	
+	return $out;
+}
+
 // base implementation of debugging, output buffer, lines count storage 
 class KTLP_BasePartParser
 {
@@ -417,6 +459,7 @@ class KTLogParser
 {
 	var $err;
 	var $readableConverter;
+	var $parser;
 	
 	function KTLogParser()
 	{
@@ -434,21 +477,34 @@ class KTLogParser
 			return NULL;
 		}
 		
-		$parser = new KTLP_Parser(KTLP_DEBUG);
+		$this->parser = new KTLP_Parser(KTLP_DEBUG);
 		
 		while (!feof($f)) {
 			$l = fgets($f);	// reads one line
 			$l = $this->readableConverter->Convert($l);
 			$l = trim($l);
-			if (!$parser->EatLine($l)) {
-				$this->err = $parser->Error();
+			if (!$this->parser->EatLine($l)) {
+				$this->err = $this->parser->Error();
 				return NULL;
 			}
 		}
 		
 		fclose($f);
 		
-		return $parser->Result();
+		return $this->parser->Result();
+	}
+	
+	function GetJSON()
+	{
+		return PHPArrayToJSON($this->parser->Result());
+	}
+	
+	function GetArray() {
+		return $this->parser->Result();
+	}
+	
+	function GetXML() {
+		return PHPArrayToXML($this->parser->Result());
 	}
 	
 	function ErrorDesc()
