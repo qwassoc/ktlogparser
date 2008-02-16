@@ -6,15 +6,12 @@
 		die;
 	}
 	
-	$parser = new KTLogParser;
-	$r = $parser->Parse($_FILES["testfile"]["tmp_name"]);
+	$key = date("U").$_SERVER["REMOTE_ADDR"].rand(0,1000);
+	$key = substr(sha1($key),0,10);
+	$file = getcwd()."/logs/".$key.".log";
+	move_uploaded_file($_FILES["testfile"]["tmp_name"], $file);
 	
-	if (is_null($r)) {
-		echo "Error: ".$parser->ErrorDesc();
-	}
-	else {
-		echo "<pre><code>";
-		print_r($r);
-		echo "</code></pre>";
-	}
+	header("Location: view.php?log={$key}");
+	header("Connection: close");
+	die;
 ?>

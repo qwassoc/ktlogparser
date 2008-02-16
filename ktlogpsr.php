@@ -24,7 +24,7 @@ define (KTLP_ST_MATCH, 3);
 define (KTLP_ST_TEAMS, 4);
 define (KTLP_ST_AFTERGAME, 5);
 
-$KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
+//$KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
 
 function KTLP_ChatLine($line) 
 {
@@ -513,6 +513,136 @@ class KTLogParser
 		case KTLP_ERR_FILEOPEN: return "File Open Error";
 		default: return "Unknown Error";
 		}
+	}
+}
+
+class KTLP_Visualizer
+{
+	function KTLP_Visualizer() {
+	}
+	
+	function TR3($a,$b,$c,$class = "") {
+		$nb = (int) $b;
+		$nc = (int) $c;
+		if ($nb || $nc) {
+			if ($nb >= $nc)
+				$b = "<em>{$b}</em>";
+			else if ($nc >= $nb)
+				$c = "<em>{$c}</em>";
+		}
+		if ($class)
+			return "<tr><td>{$a}</td><td class='{$class}'>{$b}</td><td class='{$class}'>{$c}</td></tr>\n";
+		else
+			return "<tr><td>{$a}</td><td>{$b}</td><td>{$c}</td></tr>\n";
+	}
+	
+	function TR3NZ($a,$b,$c,$class = "")
+	{
+		if ($b || $c)
+		return $this->TR3($a,$b,$c,$class);
+	}
+	
+	function GetTeamsTable($arr) {
+		$ret = "";
+		$teams = array_keys($arr["teams"]);
+		$t1 = &$arr["teams"][$teams[0]];
+		$t2 = &$arr["teams"][$teams[1]];
+
+		$ret .= "<table class='teams'>";
+		$ret .= $this->TR3("Teams",$teams[0],$teams[1],"teams");
+		$ret .= $this->TR3("Frags",$t1["frags"],$t2["frags"],"frags");
+		$ret .= "<tr><td>Summary</td><td colspan='2'>";
+		$ret .= "<p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>";
+		$ret .= "<p class='date'>Date: ".$arr["general"]["date"]."</p>";
+		$ret .= "</td></tr>";
+
+		$ret .= $this->TR3("Quads",$t1["powerups"]["Q"],$t2["powerups"]["Q"]);
+		$ret .= $this->TR3NZ("Red Armors",$t1["armr&mhs"]["ra"],$t2["armr&mhs"]["ra"]);
+		$ret .= $this->TR3NZ("Yellow Armors",$t1["armr&mhs"]["ya"],$t2["armr&mhs"]["ya"]);
+		
+		$ret .= $this->TR3NZ("Pentagrams",$t1["powerups"]["P"],$t2["powerups"]["P"]);
+		$ret .= $this->TR3NZ("Taken RLs",$t1["rl"]["Took"],$t2["rl"]["Took"]);
+		$ret .= $this->TR3NZ("Killed RLs",$t1["rl"]["Killed"],$t2["rl"]["Killed"]);
+		$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"]);
+		$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Gvn"],$t2["damage"]["Gvn"]);
+		$ret .= "</table>";
+		return $ret;
+	}
+	
+	function Flatenize($arr) {
+		$newa = array();
+		foreach($arr as $k1 => $v1) {
+			if (is_array($v1)) {
+				foreach($v1 as $k2 => $v2) {
+					$newa[$k1."-".$k2] = $v2;
+				}
+			}
+			else {
+				$newa[$k1] = $v1;			
+			}
+		}
+		return $newa;
+	}
+	
+	function GetPlayersTable($arr) {
+		$ret = "<table class='players sortable' cellspacing='2'>";
+		$plrs = array();
+		
+		foreach ($arr["players"] as $pname => $parr) {
+			$parr = $this->Flatenize($parr);
+			$plr = array();
+			
+			$plr["name"] = $pname;	// add name
+			$plr += $parr;	// add other stats
+			$plrs[] = $plr;
+		}
+		
+		$keys = array_keys($plrs[0]);
+		$team1 = $plrs[0]["team"];
+		
+		$ret .= "<thead>\n";
+		
+		$ret .= "<tr>\n";
+		foreach($keys as $k) {
+			$class = KTLP_SafeElementName($k);
+			$ret .= "<td class='{$class}'>{$k}</td>\n";
+		}
+		$ret .= "</tr>\n";
+		
+		$ret .= "</thead>\n";
+		
+		$ret .= "<tbody>\n";
+			
+		foreach($plrs as $p) {
+			$class = $p["team"] == $team1 ? "t1" : "t2";
+			$ret .= "<tr class='{$class}'>\n";
+			foreach($keys as $k) {
+				$class = KTLP_SafeElementName($k);
+				if (array_key_exists($k,$p)) 
+				$val = $p[$k];
+				else $val = "";
+				$ret .= "<td class='{$class}'>{$val}</td>\n";
+			}
+			$ret .= "</tr>\n";
+		}
+		
+		$ret .= "</tbody><tfoot></tfoot>\n";
+		$ret .= "</table>";
+		
+		return $ret;
+	}
+	
+	function GetHtml($arr) {
+		$ret = "";
+		if (count($arr["players"]) < 8 || count($arr["teams"]) != 2) {
+			return "<p>Error: Not a 4on4 match</p>";
+		}
+		
+		$ret .= $this->GetTeamsTable($arr);
+		
+		$ret .= $this->GetPlayersTable($arr);
+		
+		return $ret;
 	}
 }
 
