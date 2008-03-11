@@ -7,7 +7,10 @@
   <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
   <title>KT Log Parser: Match Stats</title>
   <style type="text/css">
-  	body { font-family: Tahoma, Arial, sans-serif; }
+  	body { font-family: Tahoma, Arial, sans-serif;
+	  background-image: url('shamby.jpg');
+	  background-repeat: no-repeat;
+	  background-position: left top; }
   	td { text-align: center; }
 	h1, h2	{ text-align: center; }
 
