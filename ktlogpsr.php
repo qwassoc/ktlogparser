@@ -153,7 +153,8 @@ class KTLP_TeamScoresParser extends KTLP_BasePartParser
 			}
 			else return true;
 		}
-		else if (preg_match("/^\[(.*)\]: (\S+) . (\S+)$/",$line,$matches)) {
+		else if (preg_match("/^\[(.*)\]: (\S+) . (\S+)$/",$line,$matches)
+			||   preg_match("/^\[(.*)\]: \S+ \+ \(.*\) = (\S+) . (\S+)$/",$line,$matches)) {
 			$team = $matches[1];
 			$frags = $matches[2];
 			$percentage = $matches[3];
@@ -584,8 +585,24 @@ class KTLP_Visualizer
 		return $newa;
 	}
 	
+	// tells in which stats category given stat type belongs 
+	function KeyCategory($key) {
+		if (preg_match("/^wp-/",$key) || preg_match("/^rl skill/",$key) || preg_match("/^damage-/",$key))
+			return 2;
+		else if (preg_match("/^armr/",$key) || preg_match("/^powerups-/",$key) || preg_match("/^rl-Took/",$key))
+			return 3;
+		else
+			return 1;
+	}
+	
+	function CategoryName($catnum) {
+		$catnum = (int) $catnum;
+		if ($catnum == 1) return "General stats";
+		if ($catnum == 2) return "Damage stats";
+		if ($catnum == 3) return "Item stats";
+	}
+	
 	function GetPlayersTable($arr) {
-		$ret = "<table class='players sortable' cellspacing='2'>";
 		$plrs = array();
 		
 		foreach ($arr["players"] as $pname => $parr) {
@@ -599,41 +616,47 @@ class KTLP_Visualizer
 		
 		$keys = array_keys($plrs[0]);
 		$team1 = $plrs[0]["team"];
+
+		$ret = "";
 		
-		$ret .= "<thead>\n";
-		
-		$ret .= "<tr>\n";
-		foreach($keys as $k) {
-			$class = KTLP_SafeElementName($k);
-			$ret .= "<td class='{$class}'>{$k}</td>\n";
-		}
-		$ret .= "</tr>\n";
-		
-		$ret .= "</thead>\n";
-		
-		$ret .= "<tbody>\n";
-			
-		foreach($plrs as $p) {
-			$class = $p["team"] == $team1 ? "t1" : "t2";
-			$ret .= "<tr class='{$class}'>\n";
+		for ($category = 1; $category <= 3; $category++) {
+			$ret .= "<h2>".$this->CategoryName($category)."</h2>";
+			$ret .= "<table class='players sortable' cellspacing='2'>\n";
+			$ret .= "<thead>\n";
+			$ret .= "<tr>\n";
 			foreach($keys as $k) {
+				if ($k != "name" && $this->KeyCategory($k) != $category) continue;
 				$class = KTLP_SafeElementName($k);
-				if (array_key_exists($k,$p)) 
-				$val = $p[$k];
-				else $val = "";
-				$ret .= "<td class='{$class}'>{$val}</td>\n";
+				$ret .= "<td class='{$class}'>".htmlspecialchars($k)."</td>\n";
 			}
 			$ret .= "</tr>\n";
+			
+			$ret .= "</thead>\n";
+			
+			$ret .= "<tbody>\n";
+				
+			foreach($plrs as $p) {
+				$class = $p["team"] == $team1 ? "t1" : "t2";
+				$ret .= "<tr class='{$class}'>\n";
+				foreach($keys as $k) {
+					if ($k != "name" && $this->KeyCategory($k) != $category) continue;
+					$class = KTLP_SafeElementName($k);
+					if (array_key_exists($k,$p)) 
+					$val = $p[$k];
+					else $val = "";
+					$ret .= "<td class='{$class}'>{$val}</td>\n";
+				}
+				$ret .= "</tr>\n";
+			}
+			
+			$ret .= "</tbody>\n";
+			$ret .= "</table>\n\n";
 		}
-		
-		$ret .= "</tbody><tfoot></tfoot>\n";
-		$ret .= "</table>";
-		
 		return $ret;
 	}
 	
 	function GetHtml($arr) {
-		$ret = "";
+		$ret = "<h1>Match stats</h1>";
 		if (count($arr["players"]) < 8 || count($arr["teams"]) != 2) {
 			return "<p>Error: Not a 4on4 match</p>";
 		}

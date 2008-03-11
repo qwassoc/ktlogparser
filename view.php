@@ -1,19 +1,27 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php echo '<'.'?'.'xml version="1.0" encoding="us-ascii"?'.'>
+'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=ascii">
-  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+  <title>KT Log Parser: Match Stats</title>
   <style type="text/css">
   	body { font-family: Tahoma, Arial, sans-serif; }
   	td { text-align: center; }
+	h1, h2	{ text-align: center; }
+
+  	table.teams { margin-left: auto; margin-right: auto; }
   	table.teams td em { font-size: 1.5em; font-weight: bold; font-style: normal; }
   	table.teams td.frags { font-size: 3em; }
   	table.teams td.teams { font-size: 4em; }
+	
+  	table.players { margin-left: auto; margin-right: auto; }
   	table.players thead td { background-color: #400; color: #fff; cursor: hand; }
   	table.players thead td:hover { background-color: #ddf; color: #000; }
   	table.players tbody tr.t1 { background-color: #eee; }
   </style>
-  <script src="sorttable.js"></script>
+  <script src="sorttable.js" type="text/javascript"></script>
   </head>
   <body>
 
