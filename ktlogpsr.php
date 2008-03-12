@@ -384,8 +384,8 @@ class KTLP_Parser
 			case KTLP_ST_PLAYERS: $this->PlayerStatsParser->EatLine($line); break;
 			case KTLP_ST_MATCH: $this->MatchStatsParser->EatLine($line); break;
 			case KTLP_ST_TEAMS: 
-				$r = $this->TeamScoresParser->EatLine($line);
-				if (!$r) {
+				$parse_result = $this->TeamScoresParser->EatLine($line);
+				if (!$parse_result) {
 					$this->parsestate = KTLP_ST_AFTERGAME;
 				}
 				break;
@@ -512,6 +512,7 @@ class KTLogParser
 	{
 		switch ($this->err) {
 		case KTLP_ERR_FILEOPEN: return "File Open Error";
+		case KTLP_ERR_OK: return "Success (no errors)";
 		default: return "Unknown Error";
 		}
 	}
