@@ -648,7 +648,7 @@ class KTLP_Visualizer
 			if (is_null($best)) continue;
 			// else
 			
-			$ret .= "<p><em>".$desc[0]."</em> awards goes to <strong>".$best["player"]."</strong>";
+			$ret .= "<p><em>".$desc[0]."</em> award goes to <strong>".$best["player"]."</strong>";
 			$ret .= " for ".$best["value"]." ".$desc[1]."</p>"; 
 		}		
 		
