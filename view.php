@@ -13,6 +13,15 @@
 	  background-position: left top; }
   	td { text-align: center; }
 	h1, h2	{ text-align: center; }
+	div.awards { 
+		margin-top: 1em;
+		text-align: center;
+		border-top: 1px solid #888;
+		border-bottom: 3px solid #888;
+	}
+	div.awards p {
+		margin: 0.3em 0;
+	}
 
   	table.teams { margin-left: auto; margin-right: auto; }
   	table.teams td em { font-size: 1.5em; font-weight: bold; font-style: normal; }

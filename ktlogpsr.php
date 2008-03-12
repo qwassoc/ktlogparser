@@ -571,6 +571,7 @@ class KTLP_Visualizer
 		return $ret;
 	}
 	
+	// converts an array with nested arrays into simple (flat) array
 	function Flatenize($arr) {
 		$newa = array();
 		foreach($arr as $k1 => $v1) {
@@ -603,6 +604,58 @@ class KTLP_Visualizer
 		if ($catnum == 3) return "Item stats";
 	}
 	
+	// gets the name of the player who was the best in given stats
+	function GetBestPlayer($data, $statkey)
+	{
+		$best_plr = "";
+		$best_max = 0;
+		
+		foreach ($data as $d) {
+			$val = (float) $d[$statkey];
+			if ($val >= $best_max) {
+				if ($best_plr && $val == $best_max)
+					$best_plr .= " and [".$d["team"]."]".$d["name"];
+				else
+					$best_plr = "[".$d["team"]."]".$d["name"];
+					
+				$best_max = $val;
+			}
+		}
+		
+		if ($best_max)
+			return array("player" => $best_plr, "value" => $best_max);
+		else
+			return null;
+	}
+	
+	// returns a text saying who achieved the best results in some skills
+	function GetAwards($data)
+	{
+		$stats = array(
+			"efficiency" => array("Efficiency", "effi"), 
+			"rl-Killed" => array("RL Killer", "killed RLs"),
+			"streaks-Frags" => array("Frag Streak", "frags in one streak"),
+			"streaks-QuadRun" => array("Quadrunner", "frags in one Quadrun"),
+			"wp-sg" => array("Boomsticker", "shotgun percentage"),
+			"rl skill-dh" => array("Aimer", "direct rocket hits"),
+			"damage-Gvn" => array("Annihilator", "given damage")
+		);
+		
+		$ret = "<div class='awards'>";
+		
+		foreach ($stats as $statkey => $desc) {
+			$best = $this->GetBestPlayer($data, $statkey);
+			if (is_null($best)) continue;
+			// else
+			
+			$ret .= "<p><em>".$desc[0]."</em> awards goes to <strong>".$best["player"]."</strong>";
+			$ret .= " for ".$best["value"]." ".$desc[1]."</p>"; 
+		}		
+		
+		$ret .= "</div>";
+		return $ret;
+	}
+	
 	function GetPlayersTable($arr) {
 		$plrs = array();
 		
@@ -619,6 +672,8 @@ class KTLP_Visualizer
 		$team1 = $plrs[0]["team"];
 
 		$ret = "";
+		
+		$ret = $this->GetAwards($plrs);
 		
 		for ($category = 1; $category <= 3; $category++) {
 			$ret .= "<h2>".$this->CategoryName($category)."</h2>\n";
