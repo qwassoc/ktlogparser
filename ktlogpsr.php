@@ -549,13 +549,13 @@ class KTLP_Visualizer
 		$t1 = &$arr["teams"][$teams[0]];
 		$t2 = &$arr["teams"][$teams[1]];
 
-		$ret .= "<table class='teams'>";
+		$ret .= "<table class='teams'>\n";
 		$ret .= $this->TR3("Teams",$teams[0],$teams[1],"teams");
 		$ret .= $this->TR3("Frags",$t1["frags"],$t2["frags"],"frags");
-		$ret .= "<tr><td>Summary</td><td colspan='2'>";
-		$ret .= "<p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>";
-		$ret .= "<p class='date'>Date: ".$arr["general"]["date"]."</p>";
-		$ret .= "</td></tr>";
+		$ret .= "<tr><td>Summary</td><td colspan='2'>\n";
+		$ret .= "  <p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>\n";
+		$ret .= "  <p class='date'>Date: ".$arr["general"]["date"]."</p>\n";
+		$ret .= "</td></tr>\n";
 
 		$ret .= $this->TR3("Quads",$t1["powerups"]["Q"],$t2["powerups"]["Q"]);
 		$ret .= $this->TR3NZ("Red Armors",$t1["armr&mhs"]["ra"],$t2["armr&mhs"]["ra"]);
@@ -566,7 +566,7 @@ class KTLP_Visualizer
 		$ret .= $this->TR3NZ("Killed RLs",$t1["rl"]["Killed"],$t2["rl"]["Killed"]);
 		$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"]);
 		$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Gvn"],$t2["damage"]["Gvn"]);
-		$ret .= "</table>";
+		$ret .= "</table>\n\n";
 		return $ret;
 	}
 	
@@ -620,7 +620,7 @@ class KTLP_Visualizer
 		$ret = "";
 		
 		for ($category = 1; $category <= 3; $category++) {
-			$ret .= "<h2>".$this->CategoryName($category)."</h2>";
+			$ret .= "<h2>".$this->CategoryName($category)."</h2>\n";
 			$ret .= "<table class='players sortable' cellspacing='2'>\n";
 			$ret .= "<thead>\n";
 			$ret .= "<tr>\n";
@@ -656,7 +656,7 @@ class KTLP_Visualizer
 	}
 	
 	function GetHtml($arr) {
-		$ret = "<h1>Match stats</h1>";
+		$ret = "<h1>Match stats</h1>\n";
 		if (count($arr["players"]) < 8 || count($arr["teams"]) != 2) {
 			return "<p>Error: Not a 4on4 match</p>";
 		}
