@@ -658,8 +658,8 @@ class KTLP_Visualizer
 	
 	function GetHtml($arr) {
 		$ret = "<h1>Match stats</h1>\n";
-		if (count($arr["players"]) < 8 || count($arr["teams"]) != 2) {
-			return "<p>Error: Not a 4on4 match</p>";
+		if (count($arr["players"]) < 2 || count($arr["teams"]) != 2) {
+			return "<p>Error: Not enough players/teams found in the log</p>";
 		}
 		
 		$ret .= $this->GetTeamsTable($arr);
