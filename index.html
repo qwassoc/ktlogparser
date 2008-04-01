@@ -37,10 +37,14 @@
 	
 	<p>
 	  That will make client automatically log console text during the match, which is exactly what this script parses.
-	  If user forgot to enable console logging, he can create the log later from the demo, like this:
+	  If user forgot to enable console logging, he can create the log later from the demo! Launch the demo playback and then write following into the console:
 	  <pre><code>
-    playdemo my4on4match.mvd; log mylog; demo_jump 30:00; log stop
+    log mylog; demo_jump 30:00; log stop
     </pre></code>
+	
+	<p>
+	  You don't have to start logging from the exact start of the demo, so no need to rush :).<br />
+	  FuhQuake users reported issues with the demo_jump command. If you have such problems too, use demo_setspeed 10000000 instead of demo_jump and do the <code>log stop</code> after the demo is over 
 	
 	<p>
 	  A .log file like <a href="a.log">this</a> or <a href="b.log">this</a> will get saved in users quake/log dir, from where it can be uploaded to <strong>your website</strong>.
