@@ -156,6 +156,10 @@ class KTLP_TeamScoresParser extends KTLP_BasePartParser
 		else if (preg_match("/^\[(.*)\]: (\S+) . (\S+)$/",$line,$matches)
 			||   preg_match("/^\[(.*)\]: \S+ \+ \(.*\) = (\S+) . (\S+)$/",$line,$matches)) {
 			$team = $matches[1];
+			if ((int) $team) {
+				$team = " {$team}"; // hack for array_merge_recursive for teams with name that is a number
+			}
+			$this->DPrint(1,"team is '{$team}'");
 			$frags = $matches[2];
 			$percentage = $matches[3];
 			$this->result[$team] = array ( "frags" => $frags, "percentage" => $percentage );
@@ -203,6 +207,10 @@ class KTLP_MatchStatsParser extends KTLP_BasePartParser
 		else if ($this->section == 2) {	// main content of match stats is in this section
 			if (preg_match("/^\[(.*)\]: Wp:(.*)$/", $line, $matches)) {
 				$this->curteam = $matches[1];
+				if ((int) $this->curteam) {
+					// a hack for teams with name that is a number and would fail array_merge_recursive
+					$this->curteam = " ".$this->curteam;
+				}
 				$this->result[$this->curteam] = array();
 				$this->result[$this->curteam]["wp"] = KTLP_ParseWpLine($matches[2]);
 			}
@@ -714,6 +722,7 @@ class KTLP_Visualizer
 	function GetHtml($arr) {
 		$ret = "<h1>Match stats</h1>\n";
 		if (count($arr["players"]) < 2 || count($arr["teams"]) != 2) {
+			print_r($arr);
 			return "<p>Error: Not enough players/teams found in the log</p>";
 		}
 		
