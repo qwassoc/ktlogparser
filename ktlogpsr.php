@@ -537,7 +537,7 @@ class KTLP_Visualizer
 		if ($nb || $nc) {
 			if ($nb >= $nc)
 				$b = "<em>{$b}</em>";
-			else if ($nc >= $nb)
+			if ($nc >= $nb)
 				$c = "<em>{$c}</em>";
 		}
 		if ($class)
@@ -569,6 +569,10 @@ class KTLP_Visualizer
 		$ret .= $this->TR3("Quads",$t1["powerups"]["Q"],$t2["powerups"]["Q"]);
 		$ret .= $this->TR3NZ("Red Armors",$t1["armr&mhs"]["ra"],$t2["armr&mhs"]["ra"]);
 		$ret .= $this->TR3NZ("Yellow Armors",$t1["armr&mhs"]["ya"],$t2["armr&mhs"]["ya"]);
+		if (!$t1["armr&mhs"]["ra"] && !$t2["armr&mhs"]["ra"]) {
+			$ret .= $this->TR3NZ("Green Armors",$t1["armr&mhs"]["ga"],$t2["armr&mhs"]["ga"]);
+			$ret .= $this->TR3NZ("Megahealths",$t1["armr&mhs"]["mh"],$t2["armr&mhs"]["mh"]);
+		}
 		
 		$ret .= $this->TR3NZ("Pentagrams",$t1["powerups"]["P"],$t2["powerups"]["P"]);
 		$ret .= $this->TR3NZ("Taken RLs",$t1["rl"]["Took"],$t2["rl"]["Took"]);
