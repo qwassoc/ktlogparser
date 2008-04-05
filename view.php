@@ -60,7 +60,7 @@
 	else {
 		$v = new KTLP_Visualizer;
 		
-		echo $v->GetHTML($r);
+		echo $v->GetMiniHtml($r);
 		//echo "<pre><code>";
 		//print_r($r);
 		//echo "</code></pre>";

@@ -668,7 +668,7 @@ class KTLP_Visualizer
 		return $ret;
 	}
 	
-	function GetPlayersTable($arr) {
+	function GetPlayersTable($arr, $awardsonly = false) {
 		$plrs = array();
 		
 		foreach ($arr["players"] as $pname => $parr) {
@@ -686,6 +686,10 @@ class KTLP_Visualizer
 		$ret = "";
 		
 		$ret = $this->GetAwards($plrs);
+		
+		if ($awardsonly) {
+			return $ret;
+		}
 		
 		for ($category = 1; $category <= 3; $category++) {
 			$ret .= "<h2>".$this->CategoryName($category)."</h2>\n";
@@ -723,7 +727,7 @@ class KTLP_Visualizer
 		return $ret;
 	}
 	
-	function GetHtml($arr) {
+	function GetHtml($arr, $mini = false) {
 		$ret = "<h1>Match stats</h1>\n";
 		if (count($arr["players"]) < 2 || count($arr["teams"]) != 2) {
 			print_r($arr);
@@ -732,9 +736,13 @@ class KTLP_Visualizer
 		
 		$ret .= $this->GetTeamsTable($arr);
 		
-		$ret .= $this->GetPlayersTable($arr);
+		$ret .= $this->GetPlayersTable($arr, $mini);
 		
 		return $ret;
+	}
+	
+	function GetMiniHtml($arr) {
+		return $this->GetHtml($arr, true);
 	}
 }
 
