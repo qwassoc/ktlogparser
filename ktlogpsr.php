@@ -567,12 +567,26 @@ class KTLP_Visualizer
 	
 	function GetTeamsTable($arr) {
 		$ret = "";
-		$teams = array_keys($arr["teams"]);
-		$t1 = &$arr["teams"][$teams[0]];
-		$t2 = &$arr["teams"][$teams[1]];
+		if (count($arr["teams"])) {
+			$teamplay = true;
+			$teams = array_keys($arr["teams"]);
+			$t1 = &$arr["teams"][$teams[0]];
+			$t2 = &$arr["teams"][$teams[1]];
+		}
+		else {
+			$teamplay = false;
+			$teams = array_keys($arr["players"]);
+			$t1 = &$arr["players"][$teams[0]];
+			$t2 = &$arr["players"][$teams[1]];
+		}
 
 		$ret .= "<table class='teams'>\n";
-		$ret .= $this->TR3("Teams",$teams[0],$teams[1],"teams");
+		if ($teamplay) {
+			$ret .= $this->TR3("Teams",$teams[0],$teams[1],"teams");
+		}
+		else {
+			$ret .= $this->TR3("Players",$teams[0],$teams[1],"teams");
+		}
 		$ret .= $this->TR3("Frags",$t1["frags"],$t2["frags"],"frags");
 		$ret .= "<tr><td>Summary</td><td colspan='2'>\n";
 		$ret .= "  <p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>\n";
