@@ -262,7 +262,7 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 				// skip blank line
 			}
 			else if ($this->curplayer) {
-				if (preg_match("/^(.*): (.*)$/",$line,$matches)) {
+				if (preg_match("/^([^:]*):\s*(.*)$/",$line,$matches)) {
 					$key = strtolower(trim($matches[1]));
 					$val = trim($matches[2]);
 					if ($key == "wp") {
@@ -630,7 +630,7 @@ class KTLP_Visualizer
 	function KeyCategory($key) {
 		if (preg_match("/^wp-/",$key) || preg_match("/^rl skill/",$key) || preg_match("/^damage-/",$key))
 			return 2;
-		else if (preg_match("/^armr/",$key) || preg_match("/^powerups-/",$key) || preg_match("/^rl-Took/",$key))
+		else if (preg_match("/^armr/",$key) || preg_match("/^armor/",$key) || preg_match("/^powerups-/",$key) || preg_match("/^rl-Took/",$key))
 			return 3;
 		else
 			return 1;
