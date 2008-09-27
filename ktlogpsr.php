@@ -275,6 +275,11 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 							$val = $matches[1];
 						}
 					}
+					else if ($key == "endgame  h&a") {
+						if (preg_match("/[hH]:([\-0-9]*).*[aA]:([a-z\:0-9]*)/",$line,$matches)) {
+							$val = "h:".$matches[1]." "."a:".$matches[2];
+						}
+					}
 					else {
 						if ($t = KTLP_ParseGeneralStatsLine($val)) {
 							$val = $t;
