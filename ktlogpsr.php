@@ -729,7 +729,7 @@ class KTLP_Visualizer
 	
 	function GetHtml($arr, $mini = false) {
 		$ret = "<h1>Match stats</h1>\n";
-		if (count($arr["players"]) < 2 || count($arr["teams"]) != 2) {
+		if (count($arr["players"]) < 2) {
 			print_r($arr);
 			return "<p>Error: Not enough players/teams found in the log</p>";
 		}
