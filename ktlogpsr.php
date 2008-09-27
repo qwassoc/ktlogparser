@@ -282,12 +282,20 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 					}
 					$this->result[$this->curplayer][$key] = $val;
 				}
+				// in teamplay:
 				// 51 (5) 2 52.6%
-				else if (preg_match("/^(\d+) \((\S+)\) (\S+) (.*)%$/",$line,$matches)) {
+				else if (preg_match("/^(\S+) \((\S+)\) (\S+) (.*)%$/",$line,$matches)) {
 					$this->result[$this->curplayer]["frags"] = $matches[1];
 					$this->result[$this->curplayer]["rank"] = $matches[2];
 					$this->result[$this->curplayer]["friendkills"] = $matches[3];
 					$this->result[$this->curplayer]["efficiency"] = $matches[4];
+				}
+				// in duel:
+				// 45 (37) 84.9%
+				else if (preg_match("/^(\S+) \((\S+)\) (.*)%$/",$line,$matches)) {
+					$this->result[$this->curplayer]["frags"] = $matches[1];
+					$this->result[$this->curplayer]["rank"] = $matches[2];
+					$this->result[$this->curplayer]["efficiency"] = $matches[3];
 				}
 				else {
 					$this->result[$this->curplayer][] = $line;
