@@ -544,13 +544,21 @@ class KTLP_Visualizer
 	function KTLP_Visualizer() {
 	}
 	
-	function TR3($a,$b,$c,$class = "") {
+	function comp_ge($a, $b) {
+		return $a >= $b;
+	}
+	
+	function comp_le($a, $b) {
+		return $a <= $b;
+	}
+	
+	function TR3($a,$b,$c,$class = "",$comparer = "comp_ge") {
 		$nb = (int) $b;
 		$nc = (int) $c;
 		if ($nb || $nc) {
-			if ($nb >= $nc)
+			if (call_user_func(array("KTLP_Visualizer", $comparer), $nb ,$nc))
 				$b = "<em>{$b}</em>";
-			if ($nc >= $nb)
+			if (call_user_func(array("KTLP_Visualizer", $comparer), $nc, $nb))
 				$c = "<em>{$c}</em>";
 		}
 		if ($class)
@@ -559,10 +567,10 @@ class KTLP_Visualizer
 			return "<tr><td>{$a}</td><td>{$b}</td><td>{$c}</td></tr>\n";
 	}
 	
-	function TR3NZ($a,$b,$c,$class = "")
+	function TR3NZ($a,$b,$c,$class = "",$comparer = "comp_ge")
 	{
 		if ($b || $c)
-		return $this->TR3($a,$b,$c,$class);
+		return $this->TR3($a,$b,$c,$class,$comparer);
 	}
 	
 	function GetTeamsTable($arr) {
@@ -604,7 +612,7 @@ class KTLP_Visualizer
 		$ret .= $this->TR3NZ("Pentagrams",$t1["powerups"]["P"],$t2["powerups"]["P"]);
 		$ret .= $this->TR3NZ("Taken RLs",$t1["rl"]["Took"],$t2["rl"]["Took"]);
 		$ret .= $this->TR3NZ("Killed RLs",$t1["rl"]["Killed"],$t2["rl"]["Killed"]);
-		$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"]);
+		$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"],"","comp_le");
 		$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Gvn"],$t2["damage"]["Gvn"]);
 		$ret .= "</table>\n\n";
 		return $ret;
