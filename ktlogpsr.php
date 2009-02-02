@@ -12,17 +12,17 @@
 
 // set this to 0 to turn off debug messages, set to 1 to allow basic debug messages,
 // higher value for more verbose debug messages
-define (KTLP_DEBUG, 0);
+define ("KTLP_DEBUG", 0);
 
-define (KTLP_ERR_OK, 0);
-define (KTLP_ERR_FILEOPEN, -1);
+define ("KTLP_ERR_OK", 0);
+define ("KTLP_ERR_FILEOPEN", -1);
 
-define (KTLP_ST_PREGAME, 0);
-define (KTLP_ST_GAME, 1);
-define (KTLP_ST_PLAYERS, 2);
-define (KTLP_ST_MATCH, 3);
-define (KTLP_ST_TEAMS, 4);
-define (KTLP_ST_AFTERGAME, 5);
+define ("KTLP_ST_PREGAME", 0);
+define ("KTLP_ST_GAME", 1);
+define ("KTLP_ST_PLAYERS", 2);
+define ("KTLP_ST_MATCH", 3);
+define ("KTLP_ST_TEAMS", 4);
+define ("KTLP_ST_AFTERGAME", 5);
 
 //$KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
 
