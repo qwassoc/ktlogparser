@@ -679,6 +679,7 @@ class KTLP_Visualizer
 	function GetAwards($data)
 	{
 		$stats = array(
+			"frags" => array("Top-fragger", "frags"),
 			"efficiency" => array("Efficiency", "effi"), 
 			"rl-Killed" => array("RL Killer", "killed RLs"),
 			"streaks-Frags" => array("Frag Streak", "frags in one streak"),
