@@ -675,6 +675,49 @@ class KTLP_Visualizer
 			return null;
 	}
 	
+	function frags_compare($a, $b)
+	{
+		if ($a[1]==$b[1]) {
+			return 0;
+		} else return ($a[1] > $b[1] ? -1 : 1);
+	}
+	
+	function GetFragsTable($data)
+	{
+		$ret = "";
+		
+		$teamplay = count($data["teams"]);
+		$teams = array();
+		
+		$maxplayers = 0;
+		foreach ($data["players"] as $pname => $parr) {
+			$team = $parr["team"];
+			$frags = $parr["frags"];
+			
+			$teams[$team][] = array( 0 => $pname, 1 => $frags);
+			$maxplayers = max($maxplayers,count($teams[$team]));
+		}
+		
+		$ret .= "<table class='frags'><thead><tr>\n";
+		foreach ($teams as $team => $players) {
+			usort($teams[$team], array("KTLP_Visualizer", "frags_compare"));
+			reset($teams[$team]);
+			$ret .= "\t<th colspan='2'>".$team."</th>\n";
+		}
+		$ret .= "</tr></thead>\n<tbody>\n";
+		
+		for ($i = 0; $i < $maxplayers; $i++) {
+			$ret .= "\t<tr>\n";
+			foreach ($teams as $team => $players) {
+				$ret .= "\t\t<td class='player'>".$players[$i][0]."</td><td class='frags'>".$players[$i][1]."</td>\n";
+			}
+			$ret .= "\t</tr>\n";
+		}
+		
+		$ret .= "</tbody>\n</table>\n";
+		return $ret;
+	}
+	
 	// returns a text saying who achieved the best results in some skills
 	function GetAwards($data)
 	{
