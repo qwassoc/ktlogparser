@@ -477,6 +477,7 @@ class KTLP_ReadableConverter
 	}
 }
 
+/// Main KT Log Parser Class.
 class KTLogParser
 {
 	var $err;
@@ -489,7 +490,8 @@ class KTLogParser
 		$this->readableConverter = new KTLP_ReadableConverter();
 	}
 	
-	// returns NULL on error
+	/// Opens given file with log for reading and parses it.
+	/// Returns NULL on error or structured array with data parsed from the log.  
 	function Parse($file)
 	{
 		$this->err = KTLP_ERR_OK;
@@ -516,19 +518,23 @@ class KTLogParser
 		return $this->parser->Result();
 	}
 	
+	/// Returns the result of parsing in JSON format.
 	function GetJSON()
 	{
 		return PHPArrayToJSON($this->parser->Result());
 	}
 	
+	/// Returns the result of parsing in structured PHP array.
 	function GetArray() {
 		return $this->parser->Result();
 	}
 	
+	/// Returns the result of parsing in XML format.
 	function GetXML() {
 		return PHPArrayToXML($this->parser->Result());
 	}
 	
+	/// Obtains the description of the error that happened during the parsing.
 	function ErrorDesc()
 	{
 		switch ($this->err) {
@@ -539,6 +545,7 @@ class KTLogParser
 	}
 }
 
+/// Visualiser class provides basic HTML output of parsed statistics. 
 class KTLP_Visualizer
 {
 	function KTLP_Visualizer() {
@@ -806,6 +813,10 @@ class KTLP_Visualizer
 		return $ret;
 	}
 	
+	/// Return all possible statistics in HTML consisting of three sections:
+	/// 1) team vs. team stats table
+	/// 2) player awards list
+	/// 3) per player detailed stats tables
 	function GetHtml($arr, $mini = false) {
 		$ret = "<h1>Match stats</h1>\n";
 		if (count($arr["players"]) < 2) {
@@ -820,6 +831,8 @@ class KTLP_Visualizer
 		return $ret;
 	}
 	
+	/// Print statistics like in GetHtml, but excluding the per player detailed
+	/// stats tables.
 	function GetMiniHtml($arr) {
 		return $this->GetHtml($arr, true);
 	}

@@ -1,0 +1,95 @@
+Introduction - What is KT Log Parser?
+-------------------------------------
+
+KT Log Parser is a PHP script that parses client's console logs from matches in KTX mods 
+and extracts player stats from them into PHP array structures (XML or JSON supported too).
+It's suitable for leagues to offer rich detailed match statistics on their webpages, much
+more than just frag amounts.
+
+Benefits: 
+- Works with all current versions of existing clients (ezQuake, FuhQuake) 
+- Works with all current versions of server mods (KTPro or KTX) 
+- Doesn't need users to download and upload huge demos to get stats 
+- Easy to use on your league site 
+- It's free and open source
+
+Requirements
+------------
+Clients need to set following settings: 
+
+    match_auto_logconsole 2
+
+That will make client automatically log console text during the match, which is exactly 
+what this script parses. If user forgot to enable console logging, he can create the log 
+later from the demo! Launch the demo playback and then write following into the console:
+
+    log mylog; demo_jump 30:00; log stop
+
+You don't have to start logging from the exact start of the demo, so no need to rush :).
+
+FuhQuake compatibility issue
+----------------------------
+FuhQuake users reported issues with the demo_jump command. If you have such problems too,
+use demo_setspeed 10000000 instead of demo_jump and do the log stop after the demo is 
+over.
+
+Server side requirements
+------------------------
+PHP 4 or PHP 5
+
+Server side usage
+-----------------
+How to actually use this script.
+
+First of all, let your visitors upload the log files to some directory on your web server.
+This is up to you to handle, the script will not help you with that.
+
+Then you need to create a page page where you will call this script to display contents
+of the logs in nice structured HTML. 
+
+1) Put a line to include the script in your page:
+	require_once "ktlogpsr.php";
+
+2) Create a parser object and call the parse function:
+	$logParser = new KTLogParser;
+	$logData = $logParser->Parse("a.log");
+
+Replace "a.log" with the log that you want to parse.
+
+3) To display the data in HTML format create the KTLP_Visualizer object and call its main
+GetHtml() function:
+	$logVisualiser = new KTLP_Visualizer;
+	echo $logVisualiser->GetHtml($logData);
+
+4) Optionally you may want to display only brief stats on some of your web pages, to do so
+you can instead call:
+	echo $logVisualiser->GetMiniHtml($logData);
+
+5) Optionally you may want to produce your own HTML from the data. The script offers you
+the data in any of PHP array, XML and JSON formats:
+	$logParser->GetArray(); // this is the same as the result of $logParser->Parse(..) call
+	$logParser->GetXML();
+	$logParser->GetJSON();
+
+Server side efficiency
+----------------------
+Parsing of the log file is an expensive process. You may want to cache the results
+of parsing to increase the load time of the pages with stats and to decrease your web
+server CPU usage.
+
+It is recommended to cache the result of $logParser->Parse(..) call using e.g. PHP inbuilt
+function serialize().
+You can take benefit of other existing PHP functions too, so you get something like:
+	$logData = unserialize(file_get_contents("logs/cached_{$log_id}.dat"));
+
+This is all up to you to handle on your site. When testing effects of caching, load time
+of a single page with stats got reduced from ~500 ms down to ~90 ms. 
+
+Author
+------
+Jan "JohnNy_cz" Raszyk, jan.raszyk@gmail.com
+
+License
+-------
+GNU Lesser General Public License
+http://www.gnu.org/copyleft/lesser.html
