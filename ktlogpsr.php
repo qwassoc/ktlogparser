@@ -25,83 +25,86 @@ define ("KTLP_ST_TEAMS", 4);
 define ("KTLP_ST_AFTERGAME", 5);
 
 //$KTLP_OLD_ERROR_LVL = error_reporting(E_ALL+E_STRICT);
+class KTLP_Utils {
 
-function KTLP_ChatLine($line) 
-{
-	return preg_match("/^\S+:/",trim($line));
-}
+	static function KTLP_ChatLine($line)
+	{
+		return preg_match("/^\S+:/",trim($line));
+	}
 
-function KTLP_ParseMultipleLine($line, $pattern)
-{
-	$matches = array();
-	$val = array();
-	
-	if (preg_match_all($pattern,$line,$matches)) {
-		for ($i=0; $i < count($matches[0]); $i++) {
-			$val[$matches[1][$i]] = $matches[2][$i];
+	static function KTLP_ParseMultipleLine($line, $pattern)
+	{
+		$matches = array();
+		$val = array();
+
+		if (preg_match_all($pattern,$line,$matches)) {
+			for ($i=0; $i < count($matches[0]); $i++) {
+				$val[$matches[1][$i]] = $matches[2][$i];
+			}
+			return $val;
 		}
-		return $val;
+		else return NULL;
 	}
-	else return NULL;
-}
 
-// parses line with format like this:
-// rl62.3% sg35.6% ssg35.7%
-function KTLP_ParseWpLine($line)
-{
-	$pattern = "/\s*(\D+)([0-9\.\%]+)\s*/";
-	return KTLP_ParseMultipleLine($line, $pattern);
-}
-
-// parses line with format like this:
-// ad:61.5 dh:15
-function KTLP_ParseGeneralStatsLine($line)
-{
-	$pattern = "/\s*(\D+):(\S+)\s*/";
-	return KTLP_ParseMultipleLine($line, $pattern);
-}
-
-function KTLP_SafeElementName($name)
-{
-	return strtr($name,"& !","-__");
-}
-
-// oonverts PHP array structure into JSON format
-function PHPArrayToJSON($array)
-{
-	$out = "";
-	if (is_array($array)) {
-		$out .= "{";
-		foreach ($array as $k => $v) {
-			$out .= '"'.$k.'":';
-			$out .= PHPArrayToJSON($v);
-			$out .= ", ";
-		}	
-		$out .= "}";
+	// parses line with format like this:
+	// rl62.3% sg35.6% ssg35.7%
+	static function KTLP_ParseWpLine($line)
+	{
+		$pattern = "/\s*(\D+)([0-9\.\%]+)\s*/";
+		return KTLP_Utils::KTLP_ParseMultipleLine($line, $pattern);
 	}
-	else {
-		$out = '"'.$array.'"';
-	}
-	
-	return $out;
-}
 
-// converts PHP array structure into XML format
-function PHPArrayToXML($array)
-{
-	$out = "";
-	if (is_array($array)) {
-		foreach ($array as $k => $v) {
-			$eln = KTLP_SafeElementName($k);
-			$out .= "<$eln>".PHPArrayToXML($v)."\n</$eln>\n";
+	// parses line with format like this:
+	// ad:61.5 dh:15
+	static function KTLP_ParseGeneralStatsLine($line)
+	{
+		$pattern = "/\s*(\D+):(\S+)\s*/";
+		return KTLP_Utils::KTLP_ParseMultipleLine($line, $pattern);
+	}
+
+	static function KTLP_SafeElementName($name)
+	{
+		return strtr($name,"& !","-__");
+	}
+
+	// oonverts PHP array structure into JSON format
+	static function PHPArrayToJSON($array)
+	{
+		$out = "";
+		if (is_array($array)) {
+			$out .= "{";
+			foreach ($array as $k => $v) {
+				$out .= '"'.$k.'":';
+				$out .= self::PHPArrayToJSON($v);
+				$out .= ", ";
+			}
+			$out .= "}";
 		}
+		else {
+			$out = '"'.$array.'"';
+		}
+
+		return $out;
 	}
-	else {
-		$out = $array;
+
+	// converts PHP array structure into XML format
+	static function PHPArrayToXML($array)
+	{
+		$out = "";
+		if (is_array($array)) {
+			foreach ($array as $k => $v) {
+				$eln = KTLP_Utils::KTLP_SafeElementName($k);
+				$out .= "<$eln>".self::PHPArrayToXML($v)."\n</$eln>\n";
+			}
+		}
+		else {
+			$out = $array;
+		}
+
+		return $out;
 	}
-	
-	return $out;
 }
+
 
 // base implementation of debugging, output buffer, lines count storage 
 class KTLP_BasePartParser
@@ -212,10 +215,10 @@ class KTLP_MatchStatsParser extends KTLP_BasePartParser
 					$this->curteam = " ".$this->curteam;
 				}
 				$this->result[$this->curteam] = array();
-				$this->result[$this->curteam]["wp"] = KTLP_ParseWpLine($matches[2]);
+				$this->result[$this->curteam]["wp"] = KTLP_Utils::KTLP_ParseWpLine($matches[2]);
 			}
 			else if (preg_match("/^\s*(\S+):(.*)$/",$line,$matches)) {
-				$this->result[$this->curteam][strtolower($matches[1])] = KTLP_ParseGeneralStatsLine($matches[2]);
+				$this->result[$this->curteam][strtolower($matches[1])] = KTLP_Utils::KTLP_ParseGeneralStatsLine($matches[2]);
 			}
 		}
 		$this->DPrint(1,"Eating line done, section is {$this->section}");
@@ -266,7 +269,7 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 					$key = strtolower(trim($matches[1]));
 					$val = trim($matches[2]);
 					if ($key == "wp") {
-						if ($t = KTLP_ParseWpLine($val)) {
+						if ($t = KTLP_Utils::KTLP_ParseWpLine($val)) {
 							$val = $t;
 						}
 					}
@@ -281,7 +284,7 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 						}
 					}
 					else {
-						if ($t = KTLP_ParseGeneralStatsLine($val)) {
+						if ($t = KTLP_Utils::KTLP_ParseGeneralStatsLine($val)) {
 							$val = $t;
 						}
 					}
@@ -320,15 +323,18 @@ class KTLP_Parser
 	var $PlayerStatsParser;
 	var $TeamScoresParser;
 	var $MatchStatsParser;
+	var $fraglogParser;
 	
-	function KTLP_Parser($dbg)
+	function KTLP_Parser($dbg, $fraglogParser = null)
 	{
 		$this->parsestate = KTLP_ST_PREGAME;
 		$this->err = KTLP_ERR_OK;
 		$this->output = array();
 		$this->output["general"] = array();
 		$this->output["chat"] = array( "pre-game" => "", "after-game" => "" );
+		$this->output["frags"] = array();
 		$this->debug = $dbg;
+		$this->fraglogParser = $fraglogParser;
 		$this->PlayerStatsParser = new KTLP_PlayerStatsParser($dbg);
 		$this->TeamScoresParser = new KTLP_TeamScoresParser($dbg);
 		$this->MatchStatsParser = new KTLP_MatchStatsParser($dbg);
@@ -341,29 +347,31 @@ class KTLP_Parser
 	}
 	
 	function EatLinePreGame($line) {
-		if (KTLP_ChatLine($line)) {
+		if (KTLP_Utils::KTLP_ChatLine($line)) {
 			$this->output["chat"]["pre-game"] .= $line . "\n";
 		}
 	} 
 	
 	function EatLineAfterGame($line) {
-		if (KTLP_ChatLine($line)) {
+		if (KTLP_Utils::KTLP_ChatLine($line)) {
 			$this->output["chat"]["after-game"] .= $line ."\n";
 		}
 	}
 	
 	// not implemented,
 	// add parsing of frag messages, counting of mm2 messages, ... what else?
-	function EatLineGame($line) {}
-		
-	// not implemented,
-	function EatLineMatch($line) {}
-	
-	// not implemented
-	function EatLineTeams($line) {
-	
+	function EatLineGame($line) {
+		if ($this->fraglogParser) {
+			$ret = $this->fraglogParser->parseLine($line);
+			if (!is_null($ret)) {
+				$this->output["frags"][] = $ret;
+			}
+			else {
+				// chat, teamchat, server message
+			}
+		}
 	}
-	
+		
 	function EatLine($line)
 	{
 		$matches = array();
@@ -492,7 +500,7 @@ class KTLogParser
 	
 	/// Opens given file with log for reading and parses it.
 	/// Returns NULL on error or structured array with data parsed from the log.  
-	function Parse($file)
+	function Parse($file, $fraglogFile = null)
 	{
 		$this->err = KTLP_ERR_OK;
 		$f = fopen($file,"rb");
@@ -500,8 +508,9 @@ class KTLogParser
 			$this->err = KTLP_ERR_FILEOPEN; 
 			return NULL;
 		}
-		
-		$this->parser = new KTLP_Parser(KTLP_DEBUG);
+
+		$fraglogParser = KTLP_FraglogParser::createParser($fraglogFile); // can be null
+		$this->parser = new KTLP_Parser(KTLP_DEBUG, $fraglogParser);
 		
 		while (!feof($f)) {
 			$l = fgets($f);	// reads one line
@@ -521,7 +530,7 @@ class KTLogParser
 	/// Returns the result of parsing in JSON format.
 	function GetJSON()
 	{
-		return PHPArrayToJSON($this->parser->Result());
+		return KTLP_Utils::PHPArrayToJSON($this->parser->Result());
 	}
 	
 	/// Returns the result of parsing in structured PHP array.
@@ -531,7 +540,7 @@ class KTLogParser
 	
 	/// Returns the result of parsing in XML format.
 	function GetXML() {
-		return PHPArrayToXML($this->parser->Result());
+		return KTLP_Utils::PHPArrayToXML($this->parser->Result());
 	}
 	
 	/// Obtains the description of the error that happened during the parsing.
@@ -784,7 +793,7 @@ class KTLP_Visualizer
 			$ret .= "<tr>\n";
 			foreach($keys as $k) {
 				if ($k != "name" && $this->KeyCategory($k) != $category) continue;
-				$class = KTLP_SafeElementName($k);
+				$class = KTLP_Utils::KTLP_SafeElementName($k);
 				$ret .= "<td class='{$class}'>".htmlspecialchars($k)."</td>\n";
 			}
 			$ret .= "</tr>\n";
@@ -798,7 +807,7 @@ class KTLP_Visualizer
 				$ret .= "<tr class='{$class}'>\n";
 				foreach($keys as $k) {
 					if ($k != "name" && $this->KeyCategory($k) != $category) continue;
-					$class = KTLP_SafeElementName($k);
+					$class = KTLP_Utils::KTLP_SafeElementName($k);
 					if (array_key_exists($k,$p)) 
 					$val = $p[$k];
 					else $val = "";
@@ -838,4 +847,131 @@ class KTLP_Visualizer
 	}
 }
 
-?>
+class KTLP_FraglogParser
+{
+	private function __constructor() {}
+	private $patterns = array();
+	
+	private function addEvent($type, $weaponClass, $msg) {
+		if (preg_match('-^\"([^\"]*)\" \"([^\"]*)\"-', $msg, $matches) == 1) {
+			$pattern = "/^(.*)".$matches[1]."(.*)".$matches[2]."$/";
+		}
+		else if (preg_match('-^\"([^\"]*)\"-', $msg, $matches) == 1) {
+			$pattern = "/^(.*)".$matches[1]."(.*)$/";
+		}
+		else {
+			throw new Exception("Unable to parse obituary msg: $msg");
+		}
+
+		$suiciderIndex = -1;
+		$victimIndex = -1;
+		$killerIndex = -1;
+		$teamkill = false;
+
+		switch ($type) {
+			case "PLAYER_DEATH":
+				$suiciderIndex = 1;
+				break;
+
+			case "PLAYER_SUICIDE":
+				$suiciderIndex = 1;
+				break;
+
+			case "X_FRAGS_Y":
+				$killerIndex = 1;
+				$victimIndex = 2;
+				break;
+
+			case "X_FRAGGED_BY_Y":
+				$killerIndex = 2;
+				$victimIndex = 1;
+				break;
+
+			case "X_FRAGS_UNKNOWN":
+				throw new Exception("Unimplemented obituary type X_FRAGS_UNKNOWN");
+				break;
+
+			case "X_TEAMKILLS_Y":
+				$killerIndex = 1;
+				$victimIndex = 2;
+				$teamkill = true;
+				break;
+
+			case "X_TEAMKILLED_BY_Y":
+				$killerIndex = 2;
+				$vitimIndex = 1;
+				$teamkill = true;
+				break;
+
+			case "X_TEAMKILLS_UNKNOWN":
+				$killerIndex = 1;
+				$teamkill = true;
+				break;
+				
+			case "X_TEAMKILLED_UNKNOWN":
+				$victimIndex = 1;
+				$teamkill = true;
+				break;
+
+			default:
+				throw new Exception("Unknown obituary type: $type");
+		}
+
+		$this->patterns[] = array(
+			'pattern' => $pattern,
+			'weaponclass' => $weaponClass,
+			'suiciderIndex' => $suiciderIndex,
+			'victimIndex' => $victimIndex,
+			'killerIndex' => $killerIndex,
+			'teamkill' => $teamkill
+		);
+	}
+
+	public function parseLine($line) {
+		$ret = array();
+
+		foreach ($this->patterns as $pattern) {
+			if (preg_match($pattern['pattern'], $line, $matches) == 1) {
+				$ret['type'] = $pattern['teamkill'] ? "teamkill" :
+					($pattern['suiciderIndex'] != -1 ? "suicide" : "frag");
+				$ret['weaponclass'] = $pattern['weaponclass'];
+				
+				if ($pattern['suiciderIndex'] != -1) {
+					$ret['suicider'] = $matches[$pattern['suiciderIndex']];
+				}
+				if ($pattern['killerIndex'] != -1) {
+					$ret['killer'] = $matches[$pattern['killerIndex']];
+				}
+				if ($pattern['victimIndex'] != -1) {
+					$ret['victim'] = $matches[$pattern['victimIndex']];
+				}
+				
+				return $ret;
+			}
+		}
+		return null;
+	}
+
+	static function createParser($fragfile = null) {
+		if (is_null($fragfile)) {
+			$fragfile = "fragfile.dat";
+		}
+		$file = @fopen($fragfile, "rt");
+		if (!$file) {
+			return null;
+		}
+
+		$fraglogParser = new KTLP_FraglogParser();
+		
+		while (!feof($file)) {
+			$line = fgets($file);
+			if (preg_match("/^#DEFINE OBITUARY\s+([A-Z_]*)\s+([A-Z_]*)\s+(.*)$/", $line, $matches) == 1) {
+				$fraglogParser->addEvent($matches[1], $matches[2], $matches[3]);
+			}
+		}
+		
+		fclose($file);
+
+		return $fraglogParser;
+	}
+}
