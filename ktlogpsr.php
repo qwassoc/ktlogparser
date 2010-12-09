@@ -821,11 +821,138 @@ class KTLP_Visualizer
 		}
 		return $ret;
 	}
-	
-	/// Return all possible statistics in HTML consisting of three sections:
+
+	/**
+	 * Generates frag statistics HTML (who fragged who, suicides, weapon usage)
+	 * @param array $arr Parsed log data
+	 * @return string HTML with some statistics
+	 */
+	function GetFragsStats($arr) {
+		if (!isset($arr['frags']) || !is_array($arr['frags']) || !count($arr['frags'] == 0)) {
+			return "";
+		}
+
+		$data = $arr['frags'];
+		$suiciders = array();
+		$killWeapons = array(); // who fragged the most with given weapon
+		$deathbyWeapons = array(); // who died the most by given weapon
+		$killpairs = array();
+
+		foreach ($arr['frags'] as $frag) {
+			if ($frag['type'] == 'frag') {
+				$weapon = $frag['weaponclass'];
+				$killer = $frag['killer'];
+				$victim = $frag['victim'];
+				if (!isset($killWeapons[$weapon])) {
+					$killWeapons[$weapon] = array();
+				}
+				if (!isset($deathbyWeapons[$weapon])) {
+					$deathbyWeapons[$weapon] = array();
+				}
+
+				$killWeapons[$weapon][$killer] = array_key_exists($killer, $killWeapons[$weapon]) ?
+					$killWeapons[$weapon][$killer] + 1 : 1;
+				$deathbyWeapons[$weapon][$victim] = array_key_exists($victim, $deathbyWeapons[$weapon]) ?
+					$deathbyWeapons[$weapon][$victim] + 1 : 1;
+				$killpairKey = $killer.';'.$victim;
+				$killpairs[$killpairKey] = array_key_exists($killpairKey, $killpairs) ?
+					$killpairs[$killpairKey] + 1 : 1;
+			}
+			else if ($frag['type'] == 'suicide') {
+				$suicider = $frag['suicider'];
+				$suiciders[$suicider] = array_key_exists($suicider, $suiciders) ?
+					$suiciders[$suicider] + 1 : 1;
+			}
+		}
+
+		//TODO exclusive stats like stomp or axe kill?
+		
+		$bestkillers = array();
+		foreach ($killWeapons as $weapon => $killers) {
+			$maxkills = 0;
+			$bestkillers[$weapon] = array();
+			foreach ($killers as $killer => $kills) {
+				if ($kills > $maxkills) {
+					$bestkillers[$weapon] = array($killer);
+					$maxkills = $kills;
+				}
+				else if ($kills == $maxkills) {
+					$bestkillers[$weapon][] = $killer;
+				}
+			}
+			$bestkillers[$weapon] = array($maxkills => $bestkillers[$weapon]);
+		}
+
+		$bestvictims = array();
+		foreach ($deathbyWeapons as $weapon => $victims) {
+			$maxdeaths = 0;
+			$bestvictims[$weapon] = array();
+			foreach ($victims as $victim => $deaths) {
+				if ($deaths > $maxdeaths) {
+					$bestvictims[$weapon] = array($victim);
+					$maxdeaths = $deaths;
+				}
+				else if ($deaths == $maxdeaths) {
+					$bestvictims[$weapon][] = $victim;
+				}
+			}
+			$bestvictims[$weapon] = array($maxdeaths => $bestvictims[$weapon]);
+		}
+
+		$bestsuiciders = array();
+		$maxsuicides = 0;
+		foreach ($suiciders as $sucider => $suicides) {
+			if ($suicides > $maxsuicides) {
+				$bestsuiciders = array($suicider);
+				$maxsuicides = $suicides;
+			}
+			else if ($suicides == $maxsuicides) {
+				$bestsuiciders[] = $suicider;
+			}
+		}
+		$bestsuiciders = array($maxsuicides => $bestsuiciders);
+
+		$minpairkills = 10000;
+		$maxpairkills = 0;
+		$minkillpairs = array();
+		$maxkillpairs = array();
+		foreach ($killpairs as $killpair => $killcount) {
+			if ($killcount < $minpairkills) {
+				$minkillpairs = array($killpair);
+				$minpairkills = $killcount;
+			}
+			else if ($killcount == $minpairkills) {
+				$minkillpairs[] = $killpair;
+			}
+
+			if ($killcount > $maxpairkills) {
+				$maxkillpairs = array($killpair);
+				$maxpairkills = $killcount;
+			}
+			else if ($killcount == $maxpairkills) {
+				$maxkillpairs[] = $killpair;
+			}
+		}
+		$maxkillpairs = array($maxpairkills => $maxkillpairs);
+		$minkillpairs = array($minpairkills => $minkillpairs);
+
+		return ""; /// TODO
+
+		/// TODO count suicides for each player and add it into player stats
+		/// TODO count teamkills for each player and add it into player stats
+
+		return "<pre><code>bestkillers\n".var_export($bestkillers, true)."</code></pre>"
+			."<pre><code>bestvictims\n".var_export($bestvictims, true)."</code></pre>"
+			."<pre><code>bestsuiciders\n".var_export($bestsuiciders, true)."</code></pre>"
+			."<pre><code>maxkillpairs\n".var_export($maxkillpairs, true)."</code></pre>"
+			."<pre><code>minkillpairs\n".var_export($minkillpairs, true)."</code></pre>";
+	}
+
+	/// Return all possible statistics in HTML consisting of four sections:
 	/// 1) team vs. team stats table
 	/// 2) player awards list
-	/// 3) per player detailed stats tables
+	/// 3) frag statistics (who fragged who, suicides, weapon usage)
+	/// 4) per player detailed stats tables
 	function GetHtml($arr, $mini = false) {
 		$ret = "<h1>Match stats</h1>\n";
 		if (count($arr["players"]) < 2) {
@@ -834,6 +961,9 @@ class KTLP_Visualizer
 		}
 		
 		$ret .= $this->GetTeamsTable($arr);
+		
+		// TODO not finished yet
+		// $ret .= $this->GetFragsStats($arr);
 		
 		$ret .= $this->GetPlayersTable($arr, $mini);
 		
@@ -853,7 +983,7 @@ class KTLP_FraglogParser
 	private $patterns = array();
 	
 	private function addEvent($type, $weaponClass, $msg) {
-		if (preg_match('-^\"([^\"]*)\" \"([^\"]*)\"-', $msg, $matches) == 1) {
+		if (preg_match('-^\"([^\"]*)\"\s+\"([^\"]*)\"-', $msg, $matches) == 1) {
 			$pattern = "/^(.*)".$matches[1]."(.*)".$matches[2]."$/";
 		}
 		else if (preg_match('-^\"([^\"]*)\"-', $msg, $matches) == 1) {
