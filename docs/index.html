@@ -81,10 +81,11 @@ of the logs in nice structured HTML.
 	<pre><code>
 
 	$logParser = new KTLogParser;
-	$logData = $logParser->Parse("a.log");
+	$logData = $logParser->Parse("a.log", "fragfile.dat");
 	</code></pre>
 
-	Replace "a.log" with the log that you want to parse.
+		<p>Replace "a.log" with the log that you want to parse. <code>fragfile.dat</code> is a file describing the
+	format of frag messages in QuakeWorld. You can find this file in our source code repository too.
 
 	<li>To display the data in HTML format create the KTLP_Visualizer object and call its main
 GetHtml() function:
@@ -132,7 +133,8 @@ of a single page with stats got reduced from ~500 ms down to ~90 ms.
 
 
 	<h2>Download</h2>
-	<p><a href="http://qw-dev.net/projects/ktlogparser/">KT Log Parser Project</a></p>
+	<p><a href="http://qw-dev.net/projects/ktlogparser/">KT Log Parser Project</a>
+		- <a href="http://qw-dev.net/projects/ktlogparser/repository/show/ktlogpsr/src">repository</p>
 	
   </body>
 </html>
