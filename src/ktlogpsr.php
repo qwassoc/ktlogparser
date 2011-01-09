@@ -64,12 +64,17 @@ class KTLP_Utils {
 
 	static function KTLP_SafeElementName($name)
 	{
-		return strtr($name,"& !","-__");
+		$name = strtr($name,"& ![]|.","-____-_");
+		if ($name[0] >= '0' && $name[0] <= '9') {
+			$name = "n".$name;
+		}
+		return $name;
 	}
 
 	// oonverts PHP array structure into JSON format
 	static function PHPArrayToJSON($array)
 	{
+		return json_encode($array);
 		$out = "";
 		if (is_array($array)) {
 			$out .= "{";
@@ -98,7 +103,7 @@ class KTLP_Utils {
 			}
 		}
 		else {
-			$out = $array;
+			$out = htmlspecialchars($array);
 		}
 
 		return $out;
@@ -230,12 +235,16 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 {
 	var $curplayer;
 	var $curteam;
+	var $frags;
+	var $fraglogParser;
 
-	function KTLP_PlayerStatsParser($dbg)
+	function KTLP_PlayerStatsParser($dbg, $fraglogParser = null)
 	{
 		$this->KTLP_BasePartParser($dbg);
 		$this->curplayer = "";
 		$this->curteam = "";
+		$this->frags = array();
+		$this->fraglogParser = $fraglogParser;
 	}
 	
 	// Player stats
@@ -312,6 +321,55 @@ class KTLP_PlayerStatsParser extends KTLP_BasePartParser
 		}
 	}
 
+	// not implemented,
+	// add parsing of frag messages, counting of mm2 messages, ... what else?
+	function EatLineGame($line) {
+		if ($this->fraglogParser) {
+			$ret = $this->fraglogParser->parseLine($line);
+			if (!is_null($ret)) {
+				$this->frags[] = $ret;
+			}
+			else {
+				// chat, teamchat, server message
+			}
+		}
+	}
+
+	function CalcKills() {
+		foreach ($this->result as $player => $data) {
+			$this->result[$player]['kills'] = 0;
+			$this->result[$player]['deaths'] = 0;
+			$this->result[$player]['suicides'] = 0;
+			$this->result[$player]['teamkills'] = 0;
+		}
+		
+		foreach ($this->frags as $frag) {
+			if ($frag['type'] == 'frag') {
+				$killer = $frag['killer'];
+				$victim = $frag['victim'];
+				$this->result[$killer]['kills']++;
+				$this->result[$victim]['deaths']++;
+			}
+			else if ($frag['type'] == 'suicide') {
+				$suicider = $frag['suicider'];
+				$this->result[$suicider]['suicides']++;
+			}
+			else if ($frag['type'] == 'teamkill') {
+				if (isset($frag['killer'])) {
+					$killer = $frag['killer'];
+					$this->result[$killer]['teamkills']++;
+				}
+			}
+			else {
+				throw new Exception("Unknown type of frag event '".$frag['type']."'");
+			}
+		}
+	}
+
+	function GetFrags() {
+		return $this->frags;
+	}
+
 }
 
 class KTLP_Parser
@@ -335,7 +393,7 @@ class KTLP_Parser
 		$this->output["frags"] = array();
 		$this->debug = $dbg;
 		$this->fraglogParser = $fraglogParser;
-		$this->PlayerStatsParser = new KTLP_PlayerStatsParser($dbg);
+		$this->PlayerStatsParser = new KTLP_PlayerStatsParser($dbg, $fraglogParser);
 		$this->TeamScoresParser = new KTLP_TeamScoresParser($dbg);
 		$this->MatchStatsParser = new KTLP_MatchStatsParser($dbg);
 	}
@@ -355,20 +413,6 @@ class KTLP_Parser
 	function EatLineAfterGame($line) {
 		if (KTLP_Utils::KTLP_ChatLine($line)) {
 			$this->output["chat"]["after-game"] .= $line ."\n";
-		}
-	}
-	
-	// not implemented,
-	// add parsing of frag messages, counting of mm2 messages, ... what else?
-	function EatLineGame($line) {
-		if ($this->fraglogParser) {
-			$ret = $this->fraglogParser->parseLine($line);
-			if (!is_null($ret)) {
-				$this->output["frags"][] = $ret;
-			}
-			else {
-				// chat, teamchat, server message
-			}
 		}
 	}
 		
@@ -409,7 +453,7 @@ class KTLP_Parser
 		else {
 			switch ($this->parsestate) {
 			case KTLP_ST_PREGAME: $this->EatLinePreGame($line); break;
-			case KTLP_ST_GAME: $this->EatLineGame($line); break;
+			case KTLP_ST_GAME: $this->PlayerStatsParser->EatLineGame($line); break;
 			case KTLP_ST_PLAYERS: $this->PlayerStatsParser->EatLine($line); break;
 			case KTLP_ST_MATCH: $this->MatchStatsParser->EatLine($line); break;
 			case KTLP_ST_TEAMS: 
@@ -426,7 +470,11 @@ class KTLP_Parser
 		}
 		return true;
 	}
-	
+
+	function CalcKills() {
+		$this->PlayerStatsParser->CalcKills();
+	}
+
 	function Result() {
 		$t_scores = $this->TeamScoresParser->GetResult();
 		$t_stats = $this->MatchStatsParser->GetResult();
@@ -435,6 +483,7 @@ class KTLP_Parser
 			$t_stats
 		);
 		$this->output["players"] = $this->PlayerStatsParser->GetResult();
+		$this->output["frags"] = $this->PlayerStatsParser->GetFrags();
 		return $this->output;
 	}
 	function Error() { return $this->err; }
@@ -523,7 +572,8 @@ class KTLogParser
 		}
 		
 		fclose($f);
-		
+
+		$this->parser->calcKills();
 		return $this->parser->Result();
 	}
 	
@@ -540,7 +590,7 @@ class KTLogParser
 	
 	/// Returns the result of parsing in XML format.
 	function GetXML() {
-		return KTLP_Utils::PHPArrayToXML($this->parser->Result());
+		return "<"."?xml version='1.0'?".">\n<matchstats>".KTLP_Utils::PHPArrayToXML($this->parser->Result())."</matchstats>";
 	}
 	
 	/// Obtains the description of the error that happened during the parsing.
@@ -613,23 +663,49 @@ class KTLP_Visualizer
 		}
 		$ret .= $this->TR3("Frags",$t1["frags"],$t2["frags"],"frags");
 		$ret .= "<tr><td>Summary</td><td colspan='2'>\n";
-		$ret .= "  <p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>\n";
+		if (isset($arr["general"]["map"])) {
+			$ret .= "  <p class='map'>Map: <strong>".$arr["general"]["map"]."</strong></p>\n";
+		}
 		$ret .= "  <p class='date'>Date: ".$arr["general"]["date"]."</p>\n";
 		$ret .= "</td></tr>\n";
 
-		$ret .= $this->TR3("Quads",$t1["powerups"]["Q"],$t2["powerups"]["Q"]);
-		$ret .= $this->TR3NZ("Red Armors",$t1["armr&mhs"]["ra"],$t2["armr&mhs"]["ra"]);
-		$ret .= $this->TR3NZ("Yellow Armors",$t1["armr&mhs"]["ya"],$t2["armr&mhs"]["ya"]);
-		if (!$t1["armr&mhs"]["ra"] && !$t2["armr&mhs"]["ra"]) {
-			$ret .= $this->TR3NZ("Green Armors",$t1["armr&mhs"]["ga"],$t2["armr&mhs"]["ga"]);
-			$ret .= $this->TR3NZ("Megahealths",$t1["armr&mhs"]["mh"],$t2["armr&mhs"]["mh"]);
+		if (isset($t1["powerups"]["Q"]) || isset($t2["powerups"]["Q"])) {
+			$ret .= $this->TR3("Quads",$t1["powerups"]["Q"],$t2["powerups"]["Q"]);
 		}
-		
-		$ret .= $this->TR3NZ("Pentagrams",$t1["powerups"]["P"],$t2["powerups"]["P"]);
-		$ret .= $this->TR3NZ("Taken RLs",$t1["rl"]["Took"],$t2["rl"]["Took"]);
-		$ret .= $this->TR3NZ("Killed RLs",$t1["rl"]["Killed"],$t2["rl"]["Killed"]);
-		$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"],"","comp_le");
-		$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Gvn"],$t2["damage"]["Gvn"]);
+		$armors = false;
+		if (isset($t1["armr&mhs"]) || isset($t2["armr&mhs"])) {
+			$itemKey = "armr&mhs";
+			$armors = true;
+		}
+		else if (isset($t1["armors"]) || isset($t2["armors"])) {
+			$itemKey = "armors";
+			$armors = true;
+		}
+		if ($armors) {
+			$ret .= $this->TR3NZ("Red Armors",$t1[$itemKey]["ra"],$t2[$itemKey]["ra"]);
+			$ret .= $this->TR3NZ("Yellow Armors",$t1[$itemKey]["ya"],$t2[$itemKey]["ya"]);
+			if (!$t1[$itemKey]["ra"] && !$t2[$itemKey]["ra"]) {
+				$ret .= $this->TR3NZ("Green Armors",$t1[$itemKey]["ga"],$t2[$itemKey]["ga"]);
+				if (isset($t1[$itemKey]["mh"]) || isset($t2[$itemKey]["mh"])) {
+					$ret .= $this->TR3NZ("Megahealths",$t1[$itemKey]["mh"],$t2[$itemKey]["mh"]);
+				}
+			}
+		}
+
+		if (isset($t1["powerups"]["P"]) || isset($t2["powerups"]["P"])) {
+			$ret .= $this->TR3NZ("Pentagrams",$t1["powerups"]["P"],$t2["powerups"]["P"]);
+		}
+		if (isset($t1["rl"]) || isset($t2["rl"])) {
+			$ret .= $this->TR3NZ("Taken RLs",$t1["rl"]["Took"],$t2["rl"]["Took"]);
+			$ret .= $this->TR3NZ("Killed RLs",$t1["rl"]["Killed"],$t2["rl"]["Killed"]);
+			$ret .= $this->TR3NZ("Dropped RLs",$t1["rl"]["Dropped"],$t2["rl"]["Dropped"],"","comp_le");
+		}
+		if (isset($t1["damage"]["Gvn"])) { // ktx
+			$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Gvn"],$t2["damage"]["Gvn"]);
+		}
+		else if (isset($t1["damage"]["Given"])) { // kt
+			$ret .= $this->TR3NZ("Given Damage",$t1["damage"]["Given"],$t2["damage"]["Given"]);
+		}
 		$ret .= "</table>\n\n";
 		return $ret;
 	}
@@ -674,6 +750,9 @@ class KTLP_Visualizer
 		$best_max = 0;
 		
 		foreach ($data as $d) {
+			if (!isset($d[$statkey])) {
+				continue;
+			}
 			$val = (float) $d[$statkey];
 			if ($val >= $best_max) {
 				if ($best_plr && $val == $best_max)
@@ -762,9 +841,54 @@ class KTLP_Visualizer
 		$ret .= "</div>";
 		return $ret;
 	}
+
+	function array_merge_unique_ordered($ar1, $ar2) {
+		$l1 = count($ar1);
+		$l2 = count($ar2);
+		$p1 = 0;
+		$p2 = 0;
+		$res = array();
+
+		while ($p2 < $l2) {
+			while ($p1 < $l1 && $p2 < $l2 && $ar1[$p1] == $ar2[$p2]) {
+				$res[] = $ar1[$p1];
+				$p1++; $p2++;
+			}
+
+			if ($p1 == $l1) {
+				while ($p2 < $l2) {
+					$res[] = $ar2[$p2++];
+				}
+				break;
+			}
+
+			if ($p2 == $l2) {
+				while ($p1 < $l1) {
+					$res[] = $ar1[$p1++];
+				}
+			}
+
+			if (array_search($ar2[$p2], $ar1) === false) {
+				$res[] = $ar2[$p2++];
+				continue;
+			}
+			else if (array_search($ar1[$p1], $ar2) === false) {
+				$res[] = $ar1[$p1++];
+				continue;
+			}
+			else {
+				// different orderning, hm, what do we do
+				// lets just use item from the first array and be happy
+				$res[] = $ar1[$p1++];
+			}
+		}
+
+		return $res;
+	}
 	
 	function GetPlayersTable($arr, $awardsonly = false) {
 		$plrs = array();
+		$keys = array();
 		
 		foreach ($arr["players"] as $pname => $parr) {
 			$parr = $this->Flatenize($parr);
@@ -772,14 +896,12 @@ class KTLP_Visualizer
 			
 			$plr["name"] = $pname;	// add name
 			$plr += $parr;	// add other stats
+			//$keys = array_unique(array_merge($keys, array_keys($plr)));
+			$keys = $this->array_merge_unique_ordered($keys, array_keys($plr));
 			$plrs[] = $plr;
 		}
-		
-		$keys = array_keys($plrs[0]);
-		$team1 = $plrs[0]["team"];
 
-		$ret = "";
-		
+		$team1 = $plrs[0]["team"];
 		$ret = $this->GetAwards($plrs);
 		
 		if ($awardsonly) {
@@ -984,10 +1106,12 @@ class KTLP_FraglogParser
 	
 	private function addEvent($type, $weaponClass, $msg) {
 		if (preg_match('-^\"([^\"]*)\"\s+\"([^\"]*)\"-', $msg, $matches) == 1) {
-			$pattern = "/^(.*)".$matches[1]."(.*)".$matches[2]."$/";
+			//$pattern = "/^(.*)".$matches[1]."(.*)".$matches[2]."$/";
+			$fastPattern = array($matches[1], $matches[2]);
 		}
 		else if (preg_match('-^\"([^\"]*)\"-', $msg, $matches) == 1) {
-			$pattern = "/^(.*)".$matches[1]."(.*)$/";
+			// $pattern = "/^(.*)".$matches[1]."(.*)$/";
+			$fastPattern = array($matches[1]);
 		}
 		else {
 			throw new Exception("Unable to parse obituary msg: $msg");
@@ -1001,20 +1125,24 @@ class KTLP_FraglogParser
 		switch ($type) {
 			case "PLAYER_DEATH":
 				$suiciderIndex = 1;
+				$nickCount = 1;
 				break;
 
 			case "PLAYER_SUICIDE":
 				$suiciderIndex = 1;
+				$nickCount = 1;
 				break;
 
 			case "X_FRAGS_Y":
 				$killerIndex = 1;
 				$victimIndex = 2;
+				$nickCount = 2;
 				break;
 
 			case "X_FRAGGED_BY_Y":
 				$killerIndex = 2;
 				$victimIndex = 1;
+				$nickCount = 2;
 				break;
 
 			case "X_FRAGS_UNKNOWN":
@@ -1025,22 +1153,26 @@ class KTLP_FraglogParser
 				$killerIndex = 1;
 				$victimIndex = 2;
 				$teamkill = true;
+				$nickCount = 2;
 				break;
 
 			case "X_TEAMKILLED_BY_Y":
 				$killerIndex = 2;
 				$vitimIndex = 1;
 				$teamkill = true;
+				$nickCount = 2;
 				break;
 
 			case "X_TEAMKILLS_UNKNOWN":
 				$killerIndex = 1;
 				$teamkill = true;
+				$nickCount = 1;
 				break;
 				
 			case "X_TEAMKILLED_UNKNOWN":
 				$victimIndex = 1;
 				$teamkill = true;
+				$nickCount = 1;
 				break;
 
 			default:
@@ -1048,12 +1180,14 @@ class KTLP_FraglogParser
 		}
 
 		$this->patterns[] = array(
-			'pattern' => $pattern,
+			//'pattern' => $pattern,
 			'weaponclass' => $weaponClass,
 			'suiciderIndex' => $suiciderIndex,
 			'victimIndex' => $victimIndex,
 			'killerIndex' => $killerIndex,
-			'teamkill' => $teamkill
+			'teamkill' => $teamkill,
+			'fastPattern' => $fastPattern,
+			'nickCount' => $nickCount,
 		);
 	}
 
@@ -1061,7 +1195,31 @@ class KTLP_FraglogParser
 		$ret = array();
 
 		foreach ($this->patterns as $pattern) {
-			if (preg_match($pattern['pattern'], $line, $matches) == 1) {
+			$fastPatt = $pattern['fastPattern'];
+			$nickCount = $pattern['nickCount'];
+			
+			$matches = array();
+			if (count($fastPatt) > 0) {
+				$p1 = strpos($line, $fastPatt[0]);
+				if ($p1 !== false) {
+					$matches[1] = substr($line, 0, $p1);
+				} else continue;
+
+				if ($nickCount == 2) {
+					$p1end = $p1 + strlen($fastPatt[0]);
+					if (count($fastPatt) == 2) {
+
+						$p2 = strpos($line, $fastPatt[1]);
+						if ($p2 !== false) {
+							$matches[2] = substr($line, $p1end, $p2-$p1end);
+						} else continue;
+					} else {
+						$matches[2] = substr($line, $p1end);
+					}
+				}
+			}
+			if (count($matches)) {
+			//if (preg_match($pattern['pattern'], $line, $matches) == 1) {
 				$ret['type'] = $pattern['teamkill'] ? "teamkill" :
 					($pattern['suiciderIndex'] != -1 ? "suicide" : "frag");
 				$ret['weaponclass'] = $pattern['weaponclass'];
@@ -1071,6 +1229,9 @@ class KTLP_FraglogParser
 				}
 				if ($pattern['killerIndex'] != -1) {
 					$ret['killer'] = $matches[$pattern['killerIndex']];
+					//var_dump($fastPatt);
+					//echo $nickCount;
+					//echo $line."\n";
 				}
 				if ($pattern['victimIndex'] != -1) {
 					$ret['victim'] = $matches[$pattern['victimIndex']];

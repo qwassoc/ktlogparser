@@ -1,0 +1,24 @@
+KT Log Parser
+=============
+
+A PHP script that parses client's console logs from matches in KTX mods and extracts player stats from them into PHP array structures. It's suitable for leagues to offer rich detailed match statistics on their webpages, much more than just frag amounts.
+
+Documentaion
+============
+Check /docs
+
+Source code
+===========
+Check /src
+
+Preview
+=======
+Check /logs
+
+Author
+======
+Jan "JohnNy_cz" Raszyk
+
+License
+=======
+LGPL

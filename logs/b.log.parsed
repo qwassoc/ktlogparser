@@ -1,0 +1,2949 @@
+array (
+  'general' => 
+  array (
+    'date' => 'Sat Oct 20, 22:23:17 2007',
+    'map' => 'e1m2',
+  ),
+  'chat' => 
+  array (
+    'pre-game' => 'lork: -  =Bs)
+(cuky): >cuk: 1000/1088 rl:100 lg:100 [quad-stairs]
+itmik: 4 rl
+lork: dont rape us
+itmik: :)
+lork: -   =Bs)
+',
+    'after-game' => 'Fr4G: gg
+lork: :)
+Fr4G: :]
+lork: gg
+',
+  ),
+  'frags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    1 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    2 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    3 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    4 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    5 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    6 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    7 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    8 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    9 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    10 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    11 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    12 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    13 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    14 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    15 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    16 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'cuky',
+    ),
+    17 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'itmik',
+    ),
+    18 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'Fr4G',
+    ),
+    19 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    20 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    21 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    22 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'JohnNy_cz',
+    ),
+    23 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    24 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    25 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'JohnNy_cz',
+    ),
+    26 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'itmik',
+    ),
+    27 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    28 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    29 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    30 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    31 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'itmik',
+    ),
+    32 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    33 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'cuky',
+    ),
+    34 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    35 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    36 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    37 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'itmik',
+    ),
+    38 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    39 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    40 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    41 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'sy',
+      'victim' => 'Fr4G',
+    ),
+    42 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    43 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    44 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    45 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    46 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'JohnNy_cz',
+    ),
+    47 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    48 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    49 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    50 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '.ThundeR.',
+    ),
+    51 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    52 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    53 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    54 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    55 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    56 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    57 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    58 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    59 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    60 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    61 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '[bo]reco',
+    ),
+    62 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    63 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    64 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'itmik',
+    ),
+    65 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    66 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'itmik',
+    ),
+    67 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    68 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    69 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    70 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    71 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    72 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    73 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    74 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    75 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    76 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    77 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    78 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    79 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    80 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    81 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    82 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    83 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'JohnNy_cz',
+    ),
+    84 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    85 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    86 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    87 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    88 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    89 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'sy',
+      'victim' => 'itmik',
+    ),
+    90 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    91 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'cuky',
+    ),
+    92 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'cuky',
+    ),
+    93 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    94 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    95 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    96 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    97 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'cuky',
+    ),
+    98 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    99 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    100 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'sy',
+      'victim' => 'Fr4G',
+    ),
+    101 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    102 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    103 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'cuky',
+    ),
+    104 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    105 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    106 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    107 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    108 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    109 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    110 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'cuky',
+    ),
+    111 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    112 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    113 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    114 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    115 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    116 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    117 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    118 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    119 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    120 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    121 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    122 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'lork',
+      'victim' => 'cuky',
+    ),
+    123 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'itmik',
+    ),
+    124 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    125 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    126 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    127 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    128 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'Fr4G',
+    ),
+    129 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    130 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    131 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    132 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    133 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    134 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    135 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    136 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    137 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    138 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'itmik',
+    ),
+    139 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    140 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    141 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    142 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    143 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    144 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    145 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    146 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    147 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    148 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    149 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    150 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    151 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    152 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    153 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    154 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    155 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    156 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'cuky',
+    ),
+    157 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    158 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    159 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    160 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'sy',
+      'victim' => 'cuky',
+    ),
+    161 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    162 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    163 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    164 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    165 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    166 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    167 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    168 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    169 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    170 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    171 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    172 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    173 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    174 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    175 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    176 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    177 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    178 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    179 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    180 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    181 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    182 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    183 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    184 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    185 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    186 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    187 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    188 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    189 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    190 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    191 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    192 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    193 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    194 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    195 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    196 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    197 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    198 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    199 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    200 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    201 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    202 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    203 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    204 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    205 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    206 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    207 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    208 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    209 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'sy',
+      'victim' => 'itmik',
+    ),
+    210 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    211 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    212 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    213 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    214 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    215 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    216 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    217 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    218 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    219 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    220 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    221 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    222 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    223 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    224 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    225 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    226 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    227 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    228 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    229 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    230 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'itmik',
+    ),
+    231 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'Fr4G',
+    ),
+    232 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    233 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    234 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    235 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    236 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    237 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'lork',
+      'victim' => 'JohnNy_cz',
+    ),
+    238 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'lork',
+      'victim' => 'cuky',
+    ),
+    239 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'itmik',
+    ),
+    240 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'itmik',
+    ),
+    241 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    242 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    243 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '[bo]reco',
+    ),
+    244 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    245 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    246 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    247 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    248 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'cuky',
+    ),
+    249 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'Fr4G',
+    ),
+    250 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    251 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    252 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    253 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    254 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    255 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    256 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    257 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    258 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    259 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    260 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    261 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    262 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    263 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    264 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    265 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'Fr4G',
+    ),
+    266 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    267 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'JohnNy_cz',
+    ),
+    268 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'lork',
+    ),
+    269 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+    270 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    271 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    272 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[bo]reco',
+      'victim' => 'Fr4G',
+    ),
+    273 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    274 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    275 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    276 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    277 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    278 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    279 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    280 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    281 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    282 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'cuky',
+    ),
+    283 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    284 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    285 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    286 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    287 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    288 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    289 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'itmik',
+    ),
+    290 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    291 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    292 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    293 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'Fr4G',
+    ),
+    294 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    295 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    296 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    297 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    298 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    299 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    300 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '.ThundeR.',
+    ),
+    301 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'itmik',
+    ),
+    302 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'lork',
+      'victim' => 'cuky',
+    ),
+    303 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    304 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'sy',
+    ),
+    305 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    306 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '.ThundeR.',
+      'victim' => 'cuky',
+    ),
+    307 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    308 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'sy',
+    ),
+    309 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'lork',
+      'victim' => 'JohnNy_cz',
+    ),
+    310 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'sy',
+    ),
+    311 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'lork',
+    ),
+    312 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    313 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    314 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'sy',
+      'victim' => 'cuky',
+    ),
+    315 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'cuky',
+      'victim' => 'sy',
+    ),
+    316 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    317 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    318 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'JohnNy_cz',
+    ),
+    319 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    320 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '[bo]reco',
+      'victim' => 'cuky',
+    ),
+    321 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    322 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    323 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    324 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'lork',
+    ),
+    325 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    326 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    327 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    328 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => '[bo]reco',
+    ),
+    329 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '[bo]reco',
+    ),
+    330 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    331 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    332 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => 'lork',
+    ),
+    333 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    334 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => '.ThundeR.',
+    ),
+    335 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    336 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    337 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    338 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Fr4G',
+      'victim' => 'sy',
+    ),
+    339 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => '[bo]reco',
+    ),
+    340 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => 'lork',
+    ),
+    341 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'Fr4G',
+      'victim' => '.ThundeR.',
+    ),
+    342 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => '.ThundeR.',
+    ),
+    343 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'cuky',
+      'victim' => '[bo]reco',
+    ),
+    344 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'lork',
+    ),
+    345 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '.ThundeR.',
+      'victim' => 'itmik',
+    ),
+  ),
+  'teams' => 
+  array (
+    'nc' => 
+    array (
+      'frags' => '87',
+      'percentage' => '27.4%',
+      'wp' => 
+      array (
+        'rl' => '17',
+        'gl' => '7',
+        'sg' => '28%',
+        'ssg' => '28%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '3',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '30',
+        'ya' => '16',
+        'ra' => '0',
+        'mh' => '16',
+      ),
+      'rl' => 
+      array (
+        'Took' => '39',
+        'Killed' => '18',
+        'Dropped' => '28',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '31215',
+        'Gvn' => '18398',
+        'Tm' => '1103',
+      ),
+    ),
+    'dc' => 
+    array (
+      'frags' => '231',
+      'percentage' => '72.6%',
+      'wp' => 
+      array (
+        'rl' => '63',
+        'gl' => '10',
+        'sg' => '25%',
+        'ssg' => '33%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '17',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '14',
+        'ya' => '37',
+        'ra' => '0',
+        'mh' => '11',
+      ),
+      'rl' => 
+      array (
+        'Took' => '24',
+        'Killed' => '36',
+        'Dropped' => '8',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '18398',
+        'Gvn' => '31215',
+        'Tm' => '1595',
+      ),
+    ),
+  ),
+  'players' => 
+  array (
+    '[bo]reco' => 
+    array (
+      'team' => 'nc',
+      'frags' => '29',
+      'rank' => '-35',
+      'friendkills' => '2',
+      'efficiency' => '31.2',
+      'wp' => 
+      array (
+        'rl' => '61.8%',
+        'gl' => '33.3%',
+        'sg' => '19.2%',
+        'ssg' => '23.4%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '60.6',
+        'dh' => '10',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '10',
+        'ya' => '6',
+        'ra' => '0',
+        'mh' => '2',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '14',
+        'Killed' => '3',
+        'Dropped' => '10',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '8199',
+        'Gvn' => '5210',
+        'Tm' => '177',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '9',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '0',
+      'kills' => 31,
+      'deaths' => 64,
+      'suicides' => 0,
+      'teamkills' => 2,
+    ),
+    'lork' => 
+    array (
+      'team' => 'nc',
+      'frags' => '19',
+      'rank' => '-39',
+      'friendkills' => '0',
+      'efficiency' => '24.7',
+      'wp' => 
+      array (
+        'gl' => '42.9%',
+        'sg' => '34.9%',
+        'ssg' => '60.7%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '63.4',
+        'dh' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '6',
+        'ya' => '6',
+        'ra' => '0',
+        'mh' => '3',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '11',
+        'Killed' => '5',
+        'Dropped' => '8',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7700',
+        'Gvn' => '5239',
+        'Tm' => '338',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '5',
+        'QuadRun' => '3',
+      ),
+      'spawnfrags' => '1',
+      'kills' => 21,
+      'deaths' => 56,
+      'suicides' => 2,
+      'teamkills' => 0,
+    ),
+    'sy' => 
+    array (
+      'team' => 'nc',
+      'frags' => '15',
+      'rank' => '-32',
+      'friendkills' => '1',
+      'efficiency' => '24.2',
+      'wp' => 
+      array (
+        'sg' => '26.5%',
+        'ssg' => '27.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '58.3',
+        'dh' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '9',
+        'ya' => '1',
+        'ra' => '0',
+        'mh' => '7',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '0',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '3',
+        'Dropped' => '6',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '6344',
+        'Gvn' => '2619',
+        'Tm' => '222',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '3',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '0',
+      'kills' => 16,
+      'deaths' => 45,
+      'suicides' => 0,
+      'teamkills' => 1,
+    ),
+    '.ThundeR.' => 
+    array (
+      'team' => 'nc',
+      'frags' => '24',
+      'rank' => '-52',
+      'friendkills' => '1',
+      'efficiency' => '24.0',
+      'wp' => 
+      array (
+        'rl' => '82.9%',
+        'gl' => '26.7%',
+        'sg' => '28.0%',
+        'ssg' => '25.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '54.3',
+        'dh' => '7',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '5',
+        'ya' => '3',
+        'ra' => '0',
+        'mh' => '4',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '7',
+        'Dropped' => '4',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '8972',
+        'Gvn' => '5330',
+        'Tm' => '366',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '6',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '1',
+      'kills' => 25,
+      'deaths' => 74,
+      'suicides' => 0,
+      'teamkills' => 1,
+    ),
+    'JohnNy_cz' => 
+    array (
+      'team' => 'dc',
+      'frags' => '63',
+      'rank' => '43',
+      'friendkills' => '1',
+      'efficiency' => '75.9',
+      'wp' => 
+      array (
+        'rl' => '76.3%',
+        'sg' => '21.9%',
+        'ssg' => '39.7%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '66.5',
+        'dh' => '18',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '3',
+        'ya' => '15',
+        'ra' => '0',
+        'mh' => '1',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '8',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '5',
+        'Killed' => '14',
+        'Dropped' => '0',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '4560',
+        'Gvn' => '7725',
+        'Tm' => '390',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '39',
+        'QuadRun' => '5',
+      ),
+      'spawnfrags' => '10',
+      'kills' => 64,
+      'deaths' => 19,
+      'suicides' => 0,
+      'teamkills' => 1,
+    ),
+    'Fr4G' => 
+    array (
+      'team' => 'dc',
+      'frags' => '66',
+      'rank' => '36',
+      'friendkills' => '0',
+      'efficiency' => '68.8',
+      'wp' => 
+      array (
+        'rl' => '61.8%',
+        'gl' => '12.9%',
+        'sg' => '27.6%',
+        'ssg' => '32.4%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '73.2',
+        'dh' => '14',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '2',
+        'ya' => '9',
+        'ra' => '0',
+        'mh' => '1',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '6',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '6',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '4378',
+        'Gvn' => '8128',
+        'Tm' => '329',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '14',
+        'QuadRun' => '6',
+      ),
+      'spawnfrags' => '5',
+      'kills' => 67,
+      'deaths' => 27,
+      'suicides' => 1,
+      'teamkills' => 0,
+    ),
+    'cuky' => 
+    array (
+      'team' => 'dc',
+      'frags' => '55',
+      'rank' => '39',
+      'friendkills' => '1',
+      'efficiency' => '77.5',
+      'wp' => 
+      array (
+        'rl' => '55.0%',
+        'gl' => '10.0%',
+        'sg' => '26.2%',
+        'ssg' => '26.9%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '63.8',
+        'dh' => '20',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '3',
+        'ya' => '8',
+        'ra' => '0',
+        'mh' => '4',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '6',
+        'Killed' => '11',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '3393',
+        'Gvn' => '7237',
+        'Tm' => '417',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '16',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '6',
+      'kills' => 57,
+      'deaths' => 15,
+      'suicides' => 1,
+      'teamkills' => 1,
+    ),
+    'itmik' => 
+    array (
+      'team' => 'dc',
+      'frags' => '47',
+      'rank' => '12',
+      'friendkills' => '2',
+      'efficiency' => '57.3',
+      'wp' => 
+      array (
+        'rl' => '55.4%',
+        'gl' => '26.2%',
+        'sg' => '24.5%',
+        'ssg' => '31.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '60.4',
+        'dh' => '11',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '6',
+        'ya' => '5',
+        'ra' => '0',
+        'mh' => '5',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '6',
+        'Killed' => '5',
+        'Dropped' => '2',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '6067',
+        'Gvn' => '8125',
+        'Tm' => '459',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '20',
+        'QuadRun' => '6',
+      ),
+      'spawnfrags' => '5',
+      'kills' => 51,
+      'deaths' => 32,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+  ),
+)

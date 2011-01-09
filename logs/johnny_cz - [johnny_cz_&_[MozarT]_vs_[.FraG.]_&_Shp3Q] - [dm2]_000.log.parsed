@@ -1,0 +1,819 @@
+array (
+  'general' => 
+  array (
+    'date' => '304-2003-12-22:23-34-20',
+    'map' => 'dm2',
+  ),
+  'chat' => 
+  array (
+    'pre-game' => 'Shp3Q: hf
+[MozarT]: gl
+johnny_cz: hf! & gl
+[itm]: to dite jeste porad krici
+johnny_cz: 8)
+[MozarT]: :)
+[.FraG.]: :c]
+[.FraG.]: :c]
+[MozarT]: :)
+[MozarT]: :)
+[MozarT]: :)
+[MozarT]: :)
+[MozarT]: :)
+[MozarT]: :)
+(johnny_cz): >joh: 1000/1000.rl:100 [low-rl/button]
+',
+    'after-game' => '[.FraG.]: neee
+Shp3Q: gg
+',
+  ),
+  'frags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    1 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    2 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    3 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    4 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    5 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    6 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    7 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    8 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    9 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    10 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    11 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '[.FraG.]',
+    ),
+    12 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => '[MozarT]',
+    ),
+    13 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    14 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    15 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    16 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    17 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    18 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    19 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    20 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    21 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    22 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    23 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    24 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '[.FraG.]',
+    ),
+    25 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'johnny_cz',
+    ),
+    26 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    27 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'johnny_cz',
+    ),
+    28 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    29 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    30 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    31 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'johnny_cz',
+    ),
+    32 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    33 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    34 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    35 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    36 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    37 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    38 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    39 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'SQUISH',
+      'suicider' => '[MozarT]',
+    ),
+    40 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    41 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'NAILGUN',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    42 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    43 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    44 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    45 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'LAVA',
+      'suicider' => '[.FraG.]',
+    ),
+    46 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    47 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'LAVA',
+      'suicider' => '[MozarT]',
+    ),
+    48 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => 'johnny_cz',
+    ),
+    49 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'Shp3Q',
+    ),
+    50 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    51 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    52 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    53 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    54 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    55 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    56 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    57 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    58 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    59 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    60 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    61 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    62 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    63 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    64 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    65 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    66 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    67 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    68 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    69 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    70 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'Shp3Q',
+    ),
+    71 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    72 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    73 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    74 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    75 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    76 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'Shp3Q',
+    ),
+    77 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    78 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    79 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => 'Shp3Q',
+    ),
+    80 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    81 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+    82 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => '[.FraG.]',
+    ),
+    83 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    84 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => '[MozarT]',
+    ),
+    85 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    86 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    87 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    88 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => '[.FraG.]',
+    ),
+    89 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'johnny_cz',
+    ),
+    90 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    91 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    92 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => '[.FraG.]',
+    ),
+    93 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    94 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[MozarT]',
+      'victim' => '[.FraG.]',
+    ),
+    95 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    96 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Shp3Q',
+      'victim' => 'johnny_cz',
+    ),
+    97 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => '[.FraG.]',
+      'victim' => '[MozarT]',
+    ),
+    98 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'johnny_cz',
+      'victim' => 'Shp3Q',
+    ),
+  ),
+  'teams' => 
+  array (
+    'dc' => 
+    array (
+      'frags' => '30',
+      'percentage' => '43.5%',
+      'wp' => 
+      array (
+        'rl' => '27',
+        'sg' => '10.1%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '6',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armors' => 
+      array (
+        'ga' => '0',
+        'ya' => '20',
+        'ra' => '17',
+      ),
+      'damage' => 
+      array (
+        'Taken' => '11060.8',
+        'Given' => '10309.5',
+      ),
+    ),
+    'bt' => 
+    array (
+      'frags' => '39',
+      'percentage' => '56.5%',
+      'wp' => 
+      array (
+        'rl' => '23',
+        'sg' => '17.7%',
+        'ssg' => '16.7%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '3',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armors' => 
+      array (
+        'ga' => '0',
+        'ya' => '17',
+        'ra' => '12',
+      ),
+      'damage' => 
+      array (
+        'Taken' => '10309.5',
+        'Given' => '11060.8',
+      ),
+    ),
+  ),
+  'players' => 
+  array (
+    '[.FraG.]' => 
+    array (
+      'team' => 'dc',
+      'frags' => '14',
+      'rank' => '-16',
+      'friendkills' => '3',
+      'efficiency' => '. 38.8',
+      'kills' => 19,
+      'deaths' => 28,
+      'suicides' => 2,
+      'teamkills' => 3,
+    ),
+    'Shp3Q' => 
+    array (
+      'team' => 'dc',
+      'frags' => '16',
+      'rank' => '-4',
+      'friendkills' => '1',
+      'efficiency' => '. 48.7',
+      'kills' => 19,
+      'deaths' => 18,
+      'suicides' => 2,
+      'teamkills' => 1,
+    ),
+    'johnny_cz' => 
+    array (
+      'team' => 'bt',
+      'frags' => '23',
+      'rank' => '0',
+      'friendkills' => '2',
+      'efficiency' => '. 54.0',
+      'kills' => 27,
+      'deaths' => 21,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+    '[MozarT]' => 
+    array (
+      'team' => 'bt',
+      'frags' => '16',
+      'rank' => '-4',
+      'friendkills' => '0',
+      'efficiency' => '. 48.7',
+      'kills' => 19,
+      'deaths' => 17,
+      'suicides' => 3,
+      'teamkills' => 0,
+    ),
+  ),
+)

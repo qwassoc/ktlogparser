@@ -1,0 +1,241 @@
+array (
+  'general' => 
+  array (
+    'date' => '2011-01-07 01:11:54 CET',
+  ),
+  'chat' => 
+  array (
+    'pre-game' => '',
+    'after-game' => '',
+  ),
+  'frags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'LIGHTNING_GUN',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    1 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    2 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    3 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    4 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    5 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    6 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    7 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    8 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    9 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'pleuraxeraphim',
+      'victim' => 'n|x',
+    ),
+    10 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'LIGHTNING_GUN',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    11 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'LIGHTNING_GUN',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    12 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    13 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    14 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'pleuraxeraphim',
+      'victim' => 'n|x',
+    ),
+    15 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    16 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    17 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'pleuraxeraphim',
+      'victim' => 'n|x',
+    ),
+    18 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+    19 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'LIGHTNING_GUN',
+      'killer' => 'n|x',
+      'victim' => 'pleuraxeraphim',
+    ),
+  ),
+  'teams' => 
+  array (
+  ),
+  'players' => 
+  array (
+    'pleuraxeraphim' => 
+    array (
+      'team' => '',
+      'frags' => '3',
+      'rank' => '-14',
+      'efficiency' => '15.0',
+      'wp' => 
+      array (
+        'rl' => '27.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '63.8',
+        'dh' => '2',
+      ),
+      'speed' => 
+      array (
+        'max' => '958.2',
+        'average' => '263.4',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '0',
+        'ya' => '0',
+        'ra' => '0',
+        'mh' => '0',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7216',
+        'Gvn' => '1716',
+        'Tm' => '0',
+      ),
+      'endgame  h&a' => 'h:250 a:174',
+      'spawnfrags' => '0',
+      'kills' => 3,
+      'deaths' => 17,
+      'suicides' => 0,
+      'teamkills' => 0,
+    ),
+    'n|x' => 
+    array (
+      'team' => '',
+      'frags' => '17',
+      'rank' => '14',
+      'efficiency' => '85.0',
+      'wp' => 
+      array (
+        'lg' => '25.6%',
+        'rl' => '53.1%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '79.5',
+        'dh' => '15',
+      ),
+      'speed' => 
+      array (
+        'max' => '1005.6',
+        'average' => '293.9',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '0',
+        'ya' => '0',
+        'ra' => '0',
+        'mh' => '0',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '1716',
+        'Gvn' => '7216',
+        'Tm' => '0',
+      ),
+      'endgame  h&a' => 'h:112 a:0',
+      'spawnfrags' => '0',
+      'kills' => 17,
+      'deaths' => 3,
+      'suicides' => 0,
+      'teamkills' => 0,
+    ),
+  ),
+)

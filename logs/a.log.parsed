@@ -1,0 +1,3518 @@
+array (
+  'general' => 
+  array (
+    'date' => '2008-01-31 23:23:04 CET',
+    'map' => 'e1m2',
+  ),
+  'chat' => 
+  array (
+    'pre-game' => '(fl4m3r): ne ja
+jebak: hf
+(fl4m3r): ja chtel dm2
+(jebak): stfu a rozmrdejte je
+(jebak): >jbk 1000/1030 rl:100 lg:100 [cross]
+',
+    'after-game' => 'divine: gg
+orion!: gg
+',
+  ),
+  'frags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    1 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    2 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    3 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    4 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    5 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    6 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    7 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    8 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    9 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    10 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    11 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    12 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    13 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    14 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    15 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    16 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    17 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    18 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    19 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'JohnNy_cz',
+    ),
+    20 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    21 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    22 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    23 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    24 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    25 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    26 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'jebak',
+    ),
+    27 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    28 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    29 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    30 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    31 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    32 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    33 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    34 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    35 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    36 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    37 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    38 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    39 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    40 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    41 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    42 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    43 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    44 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    45 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    46 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    47 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    48 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    49 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    50 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    51 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'fl4m3r',
+    ),
+    52 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    53 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    54 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    55 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    56 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    57 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    58 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    59 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    60 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    61 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    62 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    63 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    64 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'crash!',
+    ),
+    65 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    66 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    67 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    68 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    69 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    70 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    71 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    72 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    73 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    74 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    75 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    76 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    77 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    78 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    79 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    80 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    81 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    82 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    83 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    84 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    85 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    86 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    87 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'fl4m3r',
+    ),
+    88 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    89 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'fl4m3r',
+    ),
+    90 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    91 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    92 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    93 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    94 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    95 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    96 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    97 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    98 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    99 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    100 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    101 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    102 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    103 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    104 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    105 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    106 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'itmik',
+    ),
+    107 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    108 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'fl4m3r',
+    ),
+    109 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    110 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    111 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    112 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    113 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    114 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    115 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    116 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    117 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'jebak',
+    ),
+    118 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    119 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    120 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    121 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    122 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    123 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'jebak',
+    ),
+    124 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    125 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    126 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    127 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'fl4m3r',
+    ),
+    128 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    129 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    130 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'fl4m3r',
+    ),
+    131 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    132 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    133 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    134 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    135 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    136 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    137 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    138 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    139 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    140 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    141 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    142 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    143 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    144 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    145 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    146 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    147 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    148 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    149 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    150 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    151 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    152 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    153 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    154 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    155 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    156 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    157 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    158 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    159 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    160 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    161 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    162 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    163 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    164 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    165 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    166 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    167 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    168 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    169 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'JohnNy_cz',
+    ),
+    170 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    171 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    172 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    173 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    174 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    175 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    176 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    177 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    178 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    179 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    180 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    181 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    182 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    183 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    184 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    185 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    186 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    187 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    188 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    189 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    190 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    191 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    192 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    193 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    194 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    195 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    196 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    197 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    198 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    199 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    200 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    201 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    202 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    203 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    204 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    205 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    206 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    207 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'JohnNy_cz',
+    ),
+    208 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    209 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    210 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    211 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    212 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    213 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    214 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    215 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    216 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    217 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    218 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    219 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    220 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    221 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    222 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    223 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    224 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    225 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    226 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    227 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    228 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    229 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    230 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    231 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    232 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'fl4m3r',
+    ),
+    233 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    234 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    235 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    236 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    237 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    238 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    239 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    240 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    241 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    242 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    243 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    244 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    245 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    246 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    247 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    248 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    249 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    250 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'crash!',
+    ),
+    251 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    252 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    253 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    254 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    255 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    256 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    257 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    258 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    259 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    260 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'itmik',
+    ),
+    261 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    262 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    263 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    264 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    265 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    266 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    267 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    268 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    269 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    270 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    271 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    272 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    273 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    274 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    275 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    276 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    277 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    278 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    279 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    280 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    281 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    282 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    283 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'orion!',
+    ),
+    284 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    285 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    286 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    287 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    288 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    289 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    290 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    291 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    292 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    293 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    294 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    295 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    296 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    297 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    298 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    299 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    300 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    301 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    302 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    303 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'zero!',
+    ),
+    304 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    305 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    306 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    307 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    308 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    309 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    310 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    311 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    312 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    313 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    314 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    315 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'itmik',
+    ),
+    316 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    317 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    318 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    319 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    320 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    321 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    322 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    323 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    324 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    325 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    326 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    327 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    328 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'itmik',
+    ),
+    329 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    330 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    331 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    332 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    333 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    334 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    335 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    336 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    337 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    338 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'zero!',
+    ),
+    339 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    340 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    341 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'orion!',
+    ),
+    342 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    343 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    344 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    345 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'jebak',
+    ),
+    346 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    347 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    348 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    349 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    350 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'itmik',
+    ),
+    351 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    352 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    353 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'zero!',
+    ),
+    354 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    355 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    356 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'jebak',
+    ),
+    357 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    358 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    359 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'zero!',
+    ),
+    360 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    361 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'crash!',
+    ),
+    362 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    363 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    364 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    365 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'JohnNy_cz',
+    ),
+    366 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    367 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'orion!',
+      'victim' => 'JohnNy_cz',
+    ),
+    368 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'orion!',
+    ),
+    369 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    370 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    371 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    372 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    373 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    374 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    375 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    376 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    377 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    378 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+    379 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'orion!',
+    ),
+    380 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    381 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'zero!',
+    ),
+    382 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    383 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    384 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    385 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    386 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    387 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    388 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'itmik',
+    ),
+    389 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    390 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    391 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'stevens!',
+      'victim' => 'JohnNy_cz',
+    ),
+    392 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'fl4m3r',
+    ),
+    393 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    394 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    395 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'crash!',
+      'victim' => 'JohnNy_cz',
+    ),
+    396 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    397 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    398 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    399 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    400 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    401 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    402 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'itmik',
+      'victim' => 'stevens!',
+    ),
+    403 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'fl4m3r',
+    ),
+    404 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'stevens!',
+      'victim' => 'itmik',
+    ),
+    405 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    406 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TELEFRAG',
+      'victim' => 'crash!',
+    ),
+    407 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'stevens!',
+    ),
+    408 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'fl4m3r',
+    ),
+    409 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    410 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'crash!',
+    ),
+    411 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'itmik',
+      'victim' => 'crash!',
+    ),
+    412 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    413 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    414 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'JohnNy_cz',
+      'victim' => 'stevens!',
+    ),
+    415 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'itmik',
+    ),
+    416 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    417 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'jebak',
+    ),
+    418 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'fl4m3r',
+      'victim' => 'orion!',
+    ),
+    419 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    420 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    421 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'orion!',
+      'victim' => 'jebak',
+    ),
+    422 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'stevens!',
+    ),
+    423 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'jebak',
+      'victim' => 'orion!',
+    ),
+    424 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'zero!',
+      'victim' => 'JohnNy_cz',
+    ),
+    425 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'itmik',
+    ),
+    426 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'zero!',
+      'victim' => 'jebak',
+    ),
+    427 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'zero!',
+    ),
+    428 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'crash!',
+      'victim' => 'fl4m3r',
+    ),
+    429 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'fl4m3r',
+      'victim' => 'crash!',
+    ),
+  ),
+  'teams' => 
+  array (
+    'cze' => 
+    array (
+      'frags' => '200',
+      'percentage' => '54.3%',
+      'wp' => 
+      array (
+        'rl' => '44',
+        'gl' => '16',
+        'sg' => '33%',
+        'ssg' => '36%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '8',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '19',
+        'ya' => '36',
+        'ra' => '0',
+        'mh' => '15',
+      ),
+      'rl' => 
+      array (
+        'Took' => '32',
+        'Killed' => '29',
+        'Dropped' => '20',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '28934',
+        'Gvn' => '28949',
+        'Tm' => '1518',
+      ),
+    ),
+    'hun' => 
+    array (
+      'frags' => '168',
+      'percentage' => '45.7%',
+      'wp' => 
+      array (
+        'rl' => '47',
+        'gl' => '2',
+        'sg' => '33%',
+        'ssg' => '36%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '12',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '32',
+        'ya' => '16',
+        'ra' => '0',
+        'mh' => '11',
+      ),
+      'rl' => 
+      array (
+        'Took' => '33',
+        'Killed' => '26',
+        'Dropped' => '18',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '28949',
+        'Gvn' => '28934',
+        'Tm' => '1801',
+      ),
+    ),
+  ),
+  'players' => 
+  array (
+    'jebak' => 
+    array (
+      'team' => 'cze',
+      'frags' => '45',
+      'rank' => '-11',
+      'friendkills' => '2',
+      'efficiency' => '44.6',
+      'wp' => 
+      array (
+        'rl' => '69.1%',
+        'gl' => '34.8%',
+        'sg' => '32.5%',
+        'ssg' => '36.4%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '56.4',
+        'dh' => '9',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '5',
+        'ya' => '14',
+        'ra' => '0',
+        'mh' => '2',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '4',
+        'Dropped' => '5',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7619',
+        'Gvn' => '7199',
+        'Tm' => '437',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '20',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '5',
+      'kills' => 49,
+      'deaths' => 51,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+    'fl4m3r' => 
+    array (
+      'team' => 'cze',
+      'frags' => '66',
+      'rank' => '21',
+      'friendkills' => '2',
+      'efficiency' => '59.5',
+      'wp' => 
+      array (
+        'rl' => '67.1%',
+        'gl' => '26.7%',
+        'sg' => '43.6%',
+        'ssg' => '38.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '55.5',
+        'dh' => '8',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '3',
+        'ya' => '11',
+        'ra' => '0',
+        'mh' => '6',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '4',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '11',
+        'Dropped' => '5',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7584',
+        'Gvn' => '8656',
+        'Tm' => '330',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '14',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '1',
+      'kills' => 69,
+      'deaths' => 43,
+      'suicides' => 1,
+      'teamkills' => 2,
+    ),
+    'JohnNy_cz' => 
+    array (
+      'team' => 'cze',
+      'frags' => '51',
+      'rank' => '5',
+      'friendkills' => '2',
+      'efficiency' => '52.6',
+      'wp' => 
+      array (
+        'rl' => '76.3%',
+        'gl' => '42.9%',
+        'sg' => '36.7%',
+        'ssg' => '73.8%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '57.7',
+        'dh' => '15',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '4',
+        'ya' => '6',
+        'ra' => '0',
+        'mh' => '3',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '8',
+        'Killed' => '9',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '6525',
+        'Gvn' => '7355',
+        'Tm' => '241',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '9',
+        'QuadRun' => '6',
+      ),
+      'spawnfrags' => '6',
+      'kills' => 55,
+      'deaths' => 42,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+    'itmik' => 
+    array (
+      'team' => 'cze',
+      'frags' => '38',
+      'rank' => '-14',
+      'friendkills' => '2',
+      'efficiency' => '42.2',
+      'wp' => 
+      array (
+        'rl' => '62.0%',
+        'gl' => '30.0%',
+        'sg' => '22.9%',
+        'ssg' => '27.2%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '65.0',
+        'dh' => '12',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '7',
+        'ya' => '5',
+        'ra' => '0',
+        'mh' => '4',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '10',
+        'Killed' => '5',
+        'Dropped' => '7',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7206',
+        'Gvn' => '5739',
+        'Tm' => '510',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '10',
+        'QuadRun' => '1',
+      ),
+      'spawnfrags' => '2',
+      'kills' => 43,
+      'deaths' => 47,
+      'suicides' => 3,
+      'teamkills' => 2,
+    ),
+    'orion!' => 
+    array (
+      'team' => 'hun',
+      'frags' => '32',
+      'rank' => '-32',
+      'friendkills' => '1',
+      'efficiency' => '33.3',
+      'wp' => 
+      array (
+        'rl' => '60.0%',
+        'gl' => '14.3%',
+        'sg' => '33.3%',
+        'ssg' => '32.1%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '61.4',
+        'dh' => '8',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '8',
+        'ya' => '4',
+        'ra' => '0',
+        'mh' => '3',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '6',
+        'Killed' => '1',
+        'Dropped' => '4',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '7448',
+        'Gvn' => '5448',
+        'Tm' => '112',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '14',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '2',
+      'kills' => 34,
+      'deaths' => 59,
+      'suicides' => 1,
+      'teamkills' => 1,
+    ),
+    'stevens!' => 
+    array (
+      'team' => 'hun',
+      'frags' => '31',
+      'rank' => '-37',
+      'friendkills' => '1',
+      'efficiency' => '31.3',
+      'wp' => 
+      array (
+        'rl' => '48.2%',
+        'sg' => '29.2%',
+        'ssg' => '26.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '64.5',
+        'dh' => '13',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '8',
+        'ya' => '7',
+        'ra' => '0',
+        'mh' => '3',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '10',
+        'Killed' => '3',
+        'Dropped' => '5',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '8395',
+        'Gvn' => '6130',
+        'Tm' => '453',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '8',
+        'QuadRun' => '2',
+      ),
+      'spawnfrags' => '2',
+      'kills' => 32,
+      'deaths' => 65,
+      'suicides' => 0,
+      'teamkills' => 0,
+    ),
+    'crash!' => 
+    array (
+      'team' => 'hun',
+      'frags' => '44',
+      'rank' => '-10',
+      'friendkills' => '1',
+      'efficiency' => '44.9',
+      'wp' => 
+      array (
+        'rl' => '76.4%',
+        'sg' => '33.0%',
+        'ssg' => '38.9%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '63.9',
+        'dh' => '11',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '9',
+        'ya' => '2',
+        'ra' => '0',
+        'mh' => '1',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '1',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '10',
+        'Killed' => '7',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '6603',
+        'Gvn' => '7927',
+        'Tm' => '279',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '6',
+        'QuadRun' => '0',
+      ),
+      'spawnfrags' => '0',
+      'kills' => 46,
+      'deaths' => 48,
+      'suicides' => 1,
+      'teamkills' => 1,
+    ),
+    'zero!' => 
+    array (
+      'team' => 'hun',
+      'frags' => '61',
+      'rank' => '16',
+      'friendkills' => '9',
+      'efficiency' => '57.5',
+      'wp' => 
+      array (
+        'rl' => '62.3%',
+        'sg' => '35.6%',
+        'ssg' => '35.7%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '61.5',
+        'dh' => '15',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '7',
+        'ya' => '3',
+        'ra' => '0',
+        'mh' => '4',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '9',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '15',
+        'Dropped' => '6',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '6503',
+        'Gvn' => '9429',
+        'Tm' => '957',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '22',
+        'QuadRun' => '5',
+      ),
+      'spawnfrags' => '6',
+      'kills' => 71,
+      'deaths' => 44,
+      'suicides' => 1,
+      'teamkills' => 9,
+    ),
+  ),
+)

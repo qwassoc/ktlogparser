@@ -33,42 +33,6 @@
   	table.players thead td:hover { background-color: #ddf; color: #000; }
   	table.players tbody tr.t1 { background-color: #eee; }
   </style>
-  <script src="sorttable.js" type="text/javascript"></script>
+  <script src="../src/sorttable.js" type="text/javascript"></script>
   </head>
   <body>
-
-<?php
-	require "ktlogpsr.php";
-	
-	$file = $_REQUEST["log"];
-	if (!preg_match("/^[a-z0-9]+$/",$file)) {
-		echo "Invalid log specified.";
-		die;
-	}
-	$file = "logs/{$file}.log";
-	if (!file_exists($file)) {
-		echo "Invalid log specified.";
-		die;
-	}
-		
-	$parser = new KTLogParser;
-	$r = $parser->Parse($file);
-	
-	if (is_null($r)) {
-		echo "Error: ".$parser->ErrorDesc();
-	}
-	else {
-		$v = new KTLP_Visualizer;
-		
-		echo $v->GetHtml($r);
-		//echo "<pre><code>";
-		//print_r($r);
-		//echo "</code></pre>";
-	}
-?>
-
-  </body>
-</html>
-<?php
-
-?>
