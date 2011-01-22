@@ -1266,3 +1266,66 @@ class KTLP_FraglogParser
 		return $fraglogParser;
 	}
 }
+
+class KTLP_FragDifferenceCalculator
+{
+	private $stats;
+	private $diffList;
+
+	public function __construct() {
+		$this->stats = null;
+		$this->diffList = null;
+	}
+
+	public function setParsedStats($stats) {
+		$this->stats = $stats;
+	}
+
+	private function calculate() {
+		$teamScores = array();
+		$nameIndex = 0;
+		foreach ($this->stats["teams"] as $teamName => $ignored) {
+			$teamScores[$teamName] = 0;
+			$teamIndex[$nameIndex++] = $teamName;
+		}
+
+		$this->diffList = array();
+		$plMap = $this->stats["players"];
+		foreach ($this->stats["frags"] as $event) {
+			if ($event["type"] == "frag") {
+				$teamScores[$plMap[$event['killer']]["team"]]++;
+			}
+			else if ($event["type"] == "suicide") {
+				$teamScores[$plMap[$event['suicider']]["team"]]--;
+			}
+			else if ($event["type"] == "teamkill") {
+				if (isset($event["killer"])) {
+					$teamScores[$plMap[$event['killer']]["team"]]--;
+				}
+				else if (isset($event["victim"])) {
+					$teamScores[$plMap[$event['victim']]["team"]]--;
+				}
+				else {
+					throw new Exception("Unknown frag type");
+				}
+			}
+			else {
+				throw new Exception("Unknown frag type");
+			}
+
+			$difference = $teamScores[$teamIndex[0]] - $teamScores[$teamIndex[1]];
+			$this->diffList[] = $difference;
+		}
+	}
+
+	public function getFragDifferenceList() {
+		if (is_null($this->stats)) {
+			return null;
+		}
+		else if (is_null($this->diffList)) {
+			$this->calculate();
+		}
+		
+		return $this->diffList;
+	}
+}

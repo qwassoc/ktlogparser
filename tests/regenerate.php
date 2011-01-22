@@ -55,7 +55,7 @@ function main() {
 	$files = getFiles(DATA_DIR);
 	$f = fopen(TESTS_DIR."index.php", "wt");
 	if ($f) {
-		fwrite($f, "<ul>");
+		fwrite($f, "<ul>\n");
 	}
 
 	foreach ($files as $file) {
@@ -75,20 +75,20 @@ function main() {
 		file_put_contents(DATA_DIR.$file.".json", $parser->GetJSON());
 
 		if ($f) {
-			fwrite($f, "<li><ul>");
-			fwrite($f, "<li><a href='../logs/{$file}'>{$file}</a> ");
-			fwrite($f, "<li><a href='../logs/{$file}.parsed'>{$file}.parsed</a> ");
-			fwrite($f, "<li><a href='../logs/{$file}.html'>{$file}.html</a> ");
-			fwrite($f, "<li><a href='../logs/{$file}.xml'>{$file}.xml</a> ");
-			fwrite($f, "<li><a href='../logs/{$file}.json'>{$file}.json</a> ");
-			fwrite($f, "</ul>");
+			fwrite($f, "\t<li><ul>\n");
+			fwrite($f, "\t\t<li><a href='../logs/{$file}'>{$file}</a>\n");
+			fwrite($f, "\t\t<li><a href='../logs/{$file}.parsed'>{$file}.parsed</a>\n");
+			fwrite($f, "\t\t<li><a href='../logs/{$file}.html'>{$file}.html</a>\n");
+			fwrite($f, "\t\t<li><a href='../logs/{$file}.xml'>{$file}.xml</a>\n");
+			fwrite($f, "\t\t<li><a href='../logs/{$file}.json'>{$file}.json</a>\n");
+			fwrite($f, "\t</ul>\n\n");
 		}
 
 		echo "Found ".count($parseData["frags"])." frags\n";
 	}
 
 	if ($f) {
-		fwrite($f, "</ul>");
+		fwrite($f, "</ul>\n");
 		fclose($f);
 	}
 }

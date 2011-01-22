@@ -1,0 +1,4935 @@
+array (
+  'general' => 
+  array (
+    'date' => '2011-01-16 20:36:24 CET',
+    'map' => 'e1m2',
+  ),
+  'chat' => 
+  array (
+    'pre-game' => 'QiZmo: timer lag point disabled
+(xpr): > xpr    1000/1058 rl.lg:100 [quad]
+(moltas): >mol: &cf00enemy&cfff at [mega.entry]
+(moltas): >mol: 1000/1042 [mega.low] &c0ffrl&cfff&c0ffg&cfff:100/100
+',
+    'after-game' => '_WARNING: od is timing out!
+',
+  ),
+  'frags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    1 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    2 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    3 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    4 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    5 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    6 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    7 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    8 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    9 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    10 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    11 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    12 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    13 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    14 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    15 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'od',
+    ),
+    16 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    17 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    18 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    19 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    20 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    21 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    22 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    23 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    24 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    25 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    26 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    27 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    28 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    29 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    30 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    31 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'xpr',
+    ),
+    32 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    33 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    34 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    35 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    36 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    37 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'blaze',
+    ),
+    38 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    39 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    40 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    41 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    42 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    43 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'mrklarder',
+    ),
+    44 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    45 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    46 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    47 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    48 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    49 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    50 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    51 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    52 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    53 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    54 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    55 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    56 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    57 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    58 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    59 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    60 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    61 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    62 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    63 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    64 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    65 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    66 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    67 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    68 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    69 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    70 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    71 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    72 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    73 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    74 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    75 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    76 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    77 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    78 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    79 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    80 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    81 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    82 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    83 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    84 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    85 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    86 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    87 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    88 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    89 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'votary',
+    ),
+    90 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'TRAP',
+      'suicider' => 'mrklarder',
+    ),
+    91 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    92 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    93 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    94 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    95 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    96 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    97 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    98 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    99 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    100 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    101 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    102 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    103 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    104 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    105 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    106 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    107 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    108 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    109 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    110 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    111 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    112 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    113 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    114 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    115 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    116 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    117 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    118 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    119 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    120 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    121 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    122 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    123 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    124 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    125 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    126 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    127 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    128 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    129 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    130 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    131 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    132 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    133 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    134 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    135 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    136 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    137 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    138 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    139 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'xpr',
+    ),
+    140 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    141 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    142 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    143 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    144 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'od',
+    ),
+    145 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    146 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    147 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    148 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    149 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    150 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TELEFRAG',
+      'victim' => 'od',
+    ),
+    151 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    152 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    153 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    154 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    155 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    156 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    157 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    158 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    159 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    160 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    161 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    162 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    163 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    164 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    165 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    166 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    167 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    168 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    169 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    170 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    171 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    172 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    173 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    174 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    175 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    176 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'Darkki',
+    ),
+    177 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    178 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    179 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    180 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    181 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    182 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    183 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    184 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    185 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    186 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    187 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    188 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    189 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    190 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    191 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    192 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    193 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    194 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    195 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    196 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    197 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    198 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    199 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    200 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    201 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    202 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    203 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    204 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    205 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    206 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    207 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    208 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    209 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    210 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    211 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    212 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    213 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    214 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    215 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    216 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    217 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    218 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    219 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    220 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    221 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    222 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    223 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    224 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    225 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    226 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    227 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    228 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    229 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    230 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    231 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    232 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    233 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    234 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    235 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    236 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    237 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    238 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    239 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    240 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    241 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    242 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    243 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    244 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    245 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    246 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    247 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    248 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    249 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'blaze',
+    ),
+    250 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    251 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    252 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    253 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    254 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    255 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    256 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    257 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    258 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    259 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    260 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    261 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'NAILGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    262 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    263 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    264 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    265 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    266 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    267 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    268 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    269 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    270 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    271 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    272 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    273 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    274 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    275 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    276 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    277 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    278 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    279 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    280 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    281 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    282 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    283 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    284 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    285 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    286 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    287 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    288 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    289 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'od',
+    ),
+    290 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    291 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    292 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    293 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    294 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    295 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    296 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    297 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    298 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    299 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    300 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    301 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    302 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    303 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    304 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    305 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    306 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    307 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    308 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    309 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    310 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    311 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'xpr',
+    ),
+    312 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    313 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    314 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    315 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    316 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    317 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    318 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    319 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    320 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    321 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    322 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    323 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'votary',
+    ),
+    324 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    325 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    326 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    327 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    328 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    329 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'Darkki',
+    ),
+    330 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    331 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'xpr',
+    ),
+    332 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    333 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    334 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    335 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    336 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    337 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    338 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    339 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    340 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    341 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'votary',
+    ),
+    342 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    343 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    344 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    345 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'moltas',
+    ),
+    346 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    347 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    348 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    349 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    350 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    351 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    352 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    353 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    354 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    355 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    356 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    357 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    358 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'blaze',
+    ),
+    359 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    360 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    361 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    362 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    363 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    364 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    365 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    366 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    367 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    368 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    369 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    370 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    371 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    372 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    373 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    374 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    375 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    376 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    377 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    378 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    379 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    380 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    381 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    382 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    383 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'mrklarder',
+    ),
+    384 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    385 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    386 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    387 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    388 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    389 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TELEFRAG',
+      'victim' => 'Darkki',
+    ),
+    390 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    391 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'xpr',
+    ),
+    392 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    393 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    394 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    395 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    396 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'blaze',
+    ),
+    397 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    398 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    399 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    400 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    401 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'moltas',
+    ),
+    402 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    403 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    404 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    405 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    406 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    407 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    408 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    409 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    410 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    411 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    412 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    413 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    414 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    415 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    416 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    417 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    418 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    419 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    420 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    421 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    422 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    423 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    424 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    425 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    426 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    427 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    428 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    429 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    430 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    431 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    432 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    433 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    434 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    435 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    436 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    437 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    438 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    439 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    440 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    441 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    442 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    443 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    444 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    445 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    446 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    447 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    448 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    449 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    450 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    451 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    452 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    453 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    454 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    455 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    456 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    457 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    458 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    459 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    460 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    461 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    462 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    463 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'TELEFRAG',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    464 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    465 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    466 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    467 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    468 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    469 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    470 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    471 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    472 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    473 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    474 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    475 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    476 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    477 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    478 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    479 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    480 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    481 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    482 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    483 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    484 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    485 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    486 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    487 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'Darkki',
+    ),
+    488 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    489 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    490 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    491 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    492 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    493 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    494 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    495 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    496 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    497 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    498 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    499 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    500 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    501 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    502 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    503 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    504 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    505 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    506 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    507 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    508 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    509 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    510 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    511 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    512 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    513 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    514 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    515 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    516 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    517 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    518 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    519 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    520 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    521 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    522 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    523 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    524 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    525 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    526 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    527 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    528 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    529 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    530 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    531 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    532 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    533 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'mrklarder',
+    ),
+    534 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    535 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    536 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    537 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    538 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    539 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    540 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    541 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    542 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    543 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    544 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    545 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    546 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'hlt',
+    ),
+    547 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    548 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    549 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    550 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'xpr',
+    ),
+    551 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    552 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    553 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    554 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    555 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    556 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    557 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    558 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    559 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    560 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    561 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    562 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'votary',
+    ),
+    563 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    564 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    565 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'votary',
+    ),
+    566 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'xpr',
+    ),
+    567 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    568 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    569 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    570 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    571 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    572 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    573 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'votary',
+    ),
+    574 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    575 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    576 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    577 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'moltas',
+    ),
+    578 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    579 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'blaze',
+    ),
+    580 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    581 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    582 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    583 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    584 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    585 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'votary',
+    ),
+    586 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    587 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    588 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'votary',
+    ),
+    589 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    590 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'od',
+    ),
+    591 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    592 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    593 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    594 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'mrklarder',
+    ),
+    595 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    596 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'od',
+      'victim' => 'Darkki',
+    ),
+    597 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_SHOTGUN',
+      'killer' => 'blaze',
+      'victim' => 'moltas',
+    ),
+    598 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'mrklarder',
+    ),
+    599 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    600 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    601 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    602 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    603 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'GRENADE_LAUNCHER',
+      'suicider' => 'Darkki',
+    ),
+    604 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'blaze',
+      'victim' => 'od',
+    ),
+    605 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'mrklarder',
+      'victim' => 'moltas',
+    ),
+    606 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    607 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SUPER_NAILGUN',
+      'killer' => 'Darkki',
+      'victim' => 'moltas',
+    ),
+    608 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'xpr',
+    ),
+    609 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+    610 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'mrklarder',
+    ),
+    611 => 
+    array (
+      'type' => 'suicide',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'suicider' => 'mrklarder',
+    ),
+    612 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    613 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    614 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'mrklarder',
+    ),
+    615 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    616 => 
+    array (
+      'type' => 'teamkill',
+      'weaponclass' => 'TEAMKILL',
+      'killer' => 'hlt',
+    ),
+    617 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'moltas',
+    ),
+    618 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'hlt',
+      'victim' => 'od',
+    ),
+    619 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'hlt',
+    ),
+    620 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'blaze',
+    ),
+    621 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'SHOTGUN',
+      'killer' => 'Darkki',
+      'victim' => 'od',
+    ),
+    622 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    623 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'Darkki',
+    ),
+    624 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    625 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'Darkki',
+    ),
+    626 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'blaze',
+    ),
+    627 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'votary',
+      'victim' => 'hlt',
+    ),
+    628 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'mrklarder',
+      'victim' => 'xpr',
+    ),
+    629 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_ROCKET_LAUNCHER',
+      'killer' => 'moltas',
+      'victim' => 'mrklarder',
+    ),
+    630 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'blaze',
+    ),
+    631 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'Q_SUPER_SHOTGUN',
+      'killer' => 'moltas',
+      'victim' => 'hlt',
+    ),
+    632 => 
+    array (
+      'type' => 'frag',
+      'weaponclass' => 'ROCKET_LAUNCHER',
+      'killer' => 'xpr',
+      'victim' => 'Darkki',
+    ),
+  ),
+  'teams' => 
+  array (
+    'cccp' => 
+    array (
+      'frags' => '278',
+      'percentage' => '49.6%',
+      'wp' => 
+      array (
+        'rl' => '50',
+        'gl' => '17',
+        'sg' => '42%',
+        'ssg' => '41%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '10',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '25',
+        'ya' => '41',
+        'ra' => '0',
+        'mh' => '15',
+      ),
+      'rl' => 
+      array (
+        'Took' => '40',
+        'Killed' => '30',
+        'Dropped' => '15',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '42419',
+        'Gvn' => '42135',
+        'Tm' => '1628',
+      ),
+    ),
+    'ojoj' => 
+    array (
+      'frags' => '283',
+      'percentage' => '50.4%',
+      'wp' => 
+      array (
+        'rl' => '38',
+        'gl' => '31',
+        'sg' => '44%',
+        'ssg' => '45%',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '15',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '34',
+        'ya' => '29',
+        'ra' => '0',
+        'mh' => '21',
+      ),
+      'rl' => 
+      array (
+        'Took' => '34',
+        'Killed' => '34',
+        'Dropped' => '15',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '42135',
+        'Gvn' => '42419',
+        'Tm' => '2343',
+      ),
+    ),
+  ),
+  'players' => 
+  array (
+    'od' => 
+    array (
+      'team' => 'cccp',
+      'frags' => '64',
+      'rank' => '-18',
+      'friendkills' => '3',
+      'efficiency' => '43.8',
+      'wp' => 
+      array (
+        'rl' => '74.6%',
+        'gl' => '26.9%',
+        'sg' => '41.0%',
+        'ssg' => '40.1%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '91.5',
+        'dh' => '9',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '5',
+        'ya' => '10',
+        'ra' => '0',
+        'mh' => '2',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '12',
+        'Killed' => '8',
+        'Dropped' => '5',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '10302',
+        'Gvn' => '9950',
+        'Tm' => '531',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '11',
+        'QuadRun' => '3',
+      ),
+      'spawnfrags' => '5',
+      'kills' => 67,
+      'deaths' => 78,
+      'suicides' => 0,
+      'teamkills' => 3,
+    ),
+    'moltas' => 
+    array (
+      'team' => 'cccp',
+      'frags' => '57',
+      'rank' => '-49',
+      'friendkills' => '4',
+      'efficiency' => '35.0',
+      'wp' => 
+      array (
+        'rl' => '51.2%',
+        'gl' => '11.1%',
+        'sg' => '38.7%',
+        'ssg' => '32.0%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '88.4',
+        'dh' => '8',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '6',
+        'ya' => '6',
+        'ra' => '0',
+        'mh' => '5',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '4',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '11',
+        'Killed' => '6',
+        'Dropped' => '4',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '13091',
+        'Gvn' => '11764',
+        'Tm' => '509',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '11',
+        'QuadRun' => '3',
+      ),
+      'spawnfrags' => '2',
+      'kills' => 61,
+      'deaths' => 104,
+      'suicides' => 0,
+      'teamkills' => 3,
+    ),
+    'xpr' => 
+    array (
+      'team' => 'cccp',
+      'frags' => '89',
+      'rank' => '46',
+      'friendkills' => '3',
+      'efficiency' => '67.4',
+      'wp' => 
+      array (
+        'rl' => '75.7%',
+        'gl' => '23.1%',
+        'sg' => '41.9%',
+        'ssg' => '34.7%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '81.9',
+        'dh' => '25',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '9',
+        'ya' => '12',
+        'ra' => '0',
+        'mh' => '7',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '11',
+        'Killed' => '5',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '8141',
+        'Gvn' => '10775',
+        'Tm' => '449',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '17',
+        'QuadRun' => '2',
+      ),
+      'spawnfrags' => '16',
+      'kills' => 92,
+      'deaths' => 41,
+      'suicides' => 0,
+      'teamkills' => 3,
+    ),
+    'votary' => 
+    array (
+      'team' => 'cccp',
+      'frags' => '68',
+      'rank' => '-20',
+      'friendkills' => '3',
+      'efficiency' => '43.6',
+      'wp' => 
+      array (
+        'rl' => '66.2%',
+        'gl' => '14.3%',
+        'sg' => '47.4%',
+        'ssg' => '54.5%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '79.9',
+        'dh' => '8',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '5',
+        'ya' => '13',
+        'ra' => '0',
+        'mh' => '1',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '6',
+        'Killed' => '11',
+        'Dropped' => '3',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '10885',
+        'Gvn' => '9646',
+        'Tm' => '139',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '10',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '3',
+      'kills' => 72,
+      'deaths' => 82,
+      'suicides' => 1,
+      'teamkills' => 3,
+    ),
+    'hlt' => 
+    array (
+      'team' => 'ojoj',
+      'frags' => '69',
+      'rank' => '4',
+      'friendkills' => '7',
+      'efficiency' => '51.5',
+      'wp' => 
+      array (
+        'rl' => '88.1%',
+        'gl' => '23.7%',
+        'sg' => '44.8%',
+        'ssg' => '44.7%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '81.0',
+        'dh' => '10',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '10',
+        'ya' => '5',
+        'ra' => '0',
+        'mh' => '7',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '2',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '7',
+        'Killed' => '10',
+        'Dropped' => '4',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '9440',
+        'Gvn' => '10124',
+        'Tm' => '532',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '11',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '2',
+      'kills' => 76,
+      'deaths' => 63,
+      'suicides' => 0,
+      'teamkills' => 7,
+    ),
+    'blaze' => 
+    array (
+      'team' => 'ojoj',
+      'frags' => '86',
+      'rank' => '8',
+      'friendkills' => '3',
+      'efficiency' => '52.4',
+      'wp' => 
+      array (
+        'rl' => '81.8%',
+        'gl' => '32.7%',
+        'sg' => '52.7%',
+        'ssg' => '43.3%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '94.1',
+        'dh' => '14',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '6',
+        'ya' => '8',
+        'ra' => '0',
+        'mh' => '2',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '5',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '5',
+        'Killed' => '9',
+        'Dropped' => '2',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '9842',
+        'Gvn' => '11774',
+        'Tm' => '657',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '9',
+        'QuadRun' => '6',
+      ),
+      'spawnfrags' => '4',
+      'kills' => 91,
+      'deaths' => 75,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+    'mrklarder' => 
+    array (
+      'team' => 'ojoj',
+      'frags' => '59',
+      'rank' => '-24',
+      'friendkills' => '3',
+      'efficiency' => '41.5',
+      'wp' => 
+      array (
+        'rl' => '75.4%',
+        'gl' => '29.4%',
+        'sg' => '37.2%',
+        'ssg' => '40.9%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '88.4',
+        'dh' => '8',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '7',
+        'ya' => '9',
+        'ra' => '0',
+        'mh' => '5',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '5',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '13',
+        'Killed' => '9',
+        'Dropped' => '8',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '11310',
+        'Gvn' => '10244',
+        'Tm' => '595',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '8',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '5',
+      'kills' => 65,
+      'deaths' => 79,
+      'suicides' => 3,
+      'teamkills' => 3,
+    ),
+    'Darkki' => 
+    array (
+      'team' => 'ojoj',
+      'frags' => '69',
+      'rank' => '-19',
+      'friendkills' => '2',
+      'efficiency' => '43.9',
+      'wp' => 
+      array (
+        'rl' => '71.7%',
+        'gl' => '29.2%',
+        'sg' => '44.0%',
+        'ssg' => '48.1%',
+      ),
+      'rl skill' => 
+      array (
+        'ad' => '87.0',
+        'dh' => '6',
+      ),
+      'armr&mhs' => 
+      array (
+        'ga' => '11',
+        'ya' => '7',
+        'ra' => '0',
+        'mh' => '7',
+      ),
+      'powerups' => 
+      array (
+        'Q' => '3',
+        'P' => '0',
+        'R' => '0',
+      ),
+      'rl' => 
+      array (
+        'Took' => '9',
+        'Killed' => '6',
+        'Dropped' => '1',
+      ),
+      'damage' => 
+      array (
+        'Tkn' => '11543',
+        'Gvn' => '10277',
+        'Tm' => '559',
+      ),
+      'streaks' => 
+      array (
+        'Frags' => '10',
+        'QuadRun' => '4',
+      ),
+      'spawnfrags' => '4',
+      'kills' => 73,
+      'deaths' => 75,
+      'suicides' => 2,
+      'teamkills' => 2,
+    ),
+  ),
+)
