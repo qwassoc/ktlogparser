@@ -96,14 +96,21 @@ GetHtml() function:
 	echo $logVisualiser->GetHtml($logData);
 	</code></pre>
 
-	<li>Optionally you may want to display only brief stats on some of your web pages, to do so
+	<li>Optionally, you may want to display only brief stats on some of your web pages, to do so
 you can instead call:
 	<pre><code>
 	
 	echo $logVisualiser->GetMiniHtml($logData);
 	</code></pre>
 
-	<li>Optionally you may want to produce your own HTML from the data. The script offers you
+	<li>Optionally, you may want to rename some of the acquired statistics to something with better
+		readability. To do so, call this function:
+	<pre><code>
+
+	$logVisualiser->setRenameStats(true);
+	</code></pre>
+
+	<li>Optionally, you may want to produce your own HTML from the data. The script offers you
 the data in any of PHP array, XML and JSON formats:
 	<pre><code>
 

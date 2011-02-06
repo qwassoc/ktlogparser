@@ -68,6 +68,7 @@ function main() {
 		echo "Finished in ".$watch->getTime()."\n";
 
 		$visualiser = new KTLP_Visualizer();
+		$visualiser->setRenameStats(true);
 
 		file_put_contents(DATA_DIR.$file.".parsed", var_export($parseData, true));
 		file_put_contents(DATA_DIR.$file.".html", $visualiser->GetHtml($parseData));

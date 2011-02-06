@@ -607,9 +607,24 @@ class KTLogParser
 /// Visualiser class provides basic HTML output of parsed statistics. 
 class KTLP_Visualizer
 {
+	var $renameStats;
+	var $renameArray;
+
 	function KTLP_Visualizer() {
+		$this->renameStats = false;
+		$this->renameArray = array(
+			'armr&mhs-ga' => '<abbr title="Green Armor">GA</abbr>',
+			'armr&mhs-ya' => '<abbr title="Yellow Armor">YA</abbr>',
+			'armr&mhs-ra' => '<abbr title="Red Armor">RA</abbr>',
+			'armr&mhs-mh' => '<abbr title="Mega-health">MH</abbr>',
+			'rl skill-ad' => '<abbr title="Rocket Launcher Average Damage">RL AD</abbr>',
+			'rl skill-dh' => '<abbr title="Rocket Launcher Direct Hits Count">RL DH</abbr>',
+			'powerups-Q' => '<abbr title="Quad Damage Pickups">Q</abbr>',
+			'powerups-P' => '<abbr title="Pentagram Protection Pickups">P</abbr>',
+			'powerups-R' => '<abbr title="Ring of Shadows Pickups">R</abbr>',
+		);
 	}
-	
+
 	function comp_ge($a, $b) {
 		return $a >= $b;
 	}
@@ -617,7 +632,15 @@ class KTLP_Visualizer
 	function comp_le($a, $b) {
 		return $a <= $b;
 	}
-	
+
+	function setRenameStats($rename) {
+		$this->renameStats = $rename;
+	}
+
+	function setRenameArray($arr) {
+		$this->renameArray = $arr;
+	}
+
 	function TR3($a,$b,$c,$class = "",$comparer = "comp_ge") {
 		$nb = (int) $b;
 		$nc = (int) $c;
@@ -709,7 +732,13 @@ class KTLP_Visualizer
 		$ret .= "</table>\n\n";
 		return $ret;
 	}
-	
+
+	function renameKey($key) {
+		return ($this->renameStats && isset($this->renameArray[$key]))?
+				$this->renameArray[$key]
+				: htmlspecialchars($key);
+	}
+
 	// converts an array with nested arrays into simple (flat) array
 	function Flatenize($arr) {
 		$newa = array();
@@ -720,7 +749,7 @@ class KTLP_Visualizer
 				}
 			}
 			else {
-				$newa[$k1] = $v1;			
+				$newa[$k1] = $v1;
 			}
 		}
 		return $newa;
@@ -916,7 +945,7 @@ class KTLP_Visualizer
 			foreach($keys as $k) {
 				if ($k != "name" && $this->KeyCategory($k) != $category) continue;
 				$class = KTLP_Utils::KTLP_SafeElementName($k);
-				$ret .= "<td class='{$class}'>".htmlspecialchars($k)."</td>\n";
+				$ret .= "<td class='{$class}'>".$this->renameKey($k)."</td>\n";
 			}
 			$ret .= "</tr>\n";
 			
